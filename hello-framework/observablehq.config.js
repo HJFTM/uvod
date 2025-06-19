@@ -55,6 +55,8 @@ export default {
         {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/71 Groblje/Groblje_D"},
+        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},
+        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},        
       ]
     } , 
     {
@@ -95,7 +97,7 @@ export default {
       name: "Popisi",
       pages: [
 
-        {name: "Popisi (D)", path: "/pages/15 Popisi/Popisi_D"},
+
         {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"}
       ]
     } ,  
@@ -111,7 +113,7 @@ export default {
       name: "Izvori",
       pages: [
 
-        {name: "Izvori (D)", path: "/pages/21 Izvori/Izvori_D"},
+
         {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"}
       ]
     } ,  
