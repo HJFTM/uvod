@@ -90,7 +90,7 @@ export default {
       name: "Izvori",
       pages: [
         {name: "Mjesta (K)", path: "/pages/21 Izvori/Izvori_K"},
-        {name: "Mjesta (R)", path: "/pages/21 Izvori/Izvori_R"},
+        {name: "Mjesta (D)", path: "/pages/21 Izvori/Izvori_D"},
         {name: "Mjesta (E)", path: "/pages/21 Izvori/Izvori_E"}
       ]
     } ,  
