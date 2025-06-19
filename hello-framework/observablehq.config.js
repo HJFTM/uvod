@@ -43,7 +43,7 @@ export default {
       ]
     }, 
     {
-      name: "Bosna",
+      name: "Rod",
       pages: [
 
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
@@ -60,102 +60,24 @@ export default {
       ]
     } , 
     {
-      name: "Obitelji",
+      name: "Entiteti",
       pages: [
-
-
         {name: "Obitelji (E)", path: "/pages/2 Obitelji/Obitelji_E"},
-        {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"}
-      ]
-    } , 
-
-    {
-      name: "Migracije",
-      pages: [
-
-
+        {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"},
         {name: "Migracije Individualne (E)", path: "/pages/9 Migracije/Migracije_Individualne_E"},
-        {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"}
-      ]
-    } , 
-    {
-      name: "Mjesta",
-      pages: [
-
-
-        {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"}
-      ]
-    } ,    
-    {
-      name: "Kuće",
-      pages: [
-
-        {name: "Kuće (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"}
-      ]
-    } ,  
-    {
-      name: "Popisi",
-      pages: [
-
-
-        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"}
-      ]
-    } ,  
-     {
-      name: "Zupe",
-      pages: [
-
-
-        {name: "Župe (E)", path: "/pages/20 Zupe/Zupe_E"}
-      ]
-    } ,  
-    {
-      name: "Izvori",
-      pages: [
-
-
-        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"}
-      ]
-    } ,  
-    {
-      name: "Države",
-      pages: [
-       
-        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"}
-      ]
-    } , 
-    {
-      name: "Katastar",
-      pages: [
-
-
-        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"}
-      ]
-    } , 
-    {
-      name: "Pismo",
-      pages: [
-
-
-        {name: "Pismo (E)", path: "/pages/40 Pismo/Pismo_E"}
-      ]
-    } ,   
-    {
-      name: "Bolesti",
-      pages: [
-
-
-        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"}
-      ]
-    } ,    
-    {
-      name: "Groblje",
-      pages: [
-
-
+        {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"},
+        {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"},
+        {name: "Kuće (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"},
+        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"},       
+        {name: "Župe (E)", path: "/pages/20 Zupe/Zupe_E"},
+        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"},
+        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"}, 
+        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"}, 
+        {name: "Pismo (E)", path: "/pages/40 Pismo/Pismo_E"},
+        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"},
         {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
       ]
-    } ,                     
+    }                  
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
