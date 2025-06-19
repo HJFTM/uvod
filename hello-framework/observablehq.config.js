@@ -46,7 +46,7 @@ export default {
       name: "Bosna",
       pages: [
 
-        {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"}
+        {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
         {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},   
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
