@@ -14,14 +14,7 @@ export default {
          {name: "Uvod", path: "/pages/0 Uvod/uvod"}
       ]
      },
-    {
-      name: "Prezime",
-      pages: [
-        {name: "Vrste", path: "/pages/1_Prezime/prezime_vrste"},
-        {name: "Povijest", path: "/pages/1_Prezime/prezime_povijest"}
-      ]
-    } , 
-        {
+     {
       name: "Jularić",
       pages: [
         {name: "Prezime Jular-ić (K)", path: "/pages/1_Jularic/01.1.prezime_ilaric"},
