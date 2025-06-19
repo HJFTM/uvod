@@ -29,24 +29,24 @@ export default {
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"}
       ]
     }, 
-        {
+    {
       name: "Generacije",
       pages: [
         {name: "Generacije (K)", path: "/pages/2 Generacije/Generacije_K"},
         {name: "Generacije (R)", path: "/pages/2 Generacije/Generacije_R"}
       ]
     } , 
-        {
+    {
       name: "Obitelji",
       pages: [
         {name: "Obitelji (K)", path: "/pages/2 Obitelji/Obitelji_K"},
         {name: "Obitelji (R)", path: "/pages/2 Obitelji/Obitelji_R"},
         {name: "Obitelji (E)", path: "/pages/2 Obitelji/Obitelji_E"},
-        {name: "Obitelji Zapisi", path: "/pages/2 Obitelji/Obitelj_Zapisi"}
+        {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"}
       ]
     } , 
 
-            {
+    {
       name: "Migracije",
       pages: [
         {name: "Migracije (K)", path: "/pages/9 Migracije/Migracije_K"},
@@ -55,7 +55,7 @@ export default {
         {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"}
       ]
     } , 
-             {
+    {
       name: "Mjesta",
       pages: [
         {name: "Mjesta (K)", path: "/pages/10 Mjesta/Mjesta_K"},
@@ -63,7 +63,77 @@ export default {
         {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"}
       ]
     } ,    
-   ],
+    {
+      name: "Kuće",
+      pages: [
+        {name: "Kuće (K)", path: "/pages/11 Kucedomacin/Kucedomacin_K"},
+        {name: "Kuže (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"}
+      ]
+    } ,  
+    {
+      name: "Popisi",
+      pages: [
+        {name: "Mjesta (K)", path: "/pages/15 Popisi/Popisi_K"},
+        {name: "Mjesta (R)", path: "/pages/15 Popisi/Popisi_D"},
+        {name: "Mjesta (E)", path: "/pages/15 Popisi/Popisi_E"}
+      ]
+    } ,  
+     {
+      name: "Zupe",
+      pages: [
+        {name: "Mjesta (K)", path: "/pages/20 Zupe/Zupe_K"},
+        {name: "Mjesta (R)", path: "/pages/20 Zupe/Zupe_D"},
+        {name: "Mjesta (E)", path: "/pages/20 Zupe/Zupe_E"}
+      ]
+    } ,  
+    {
+      name: "Izvori",
+      pages: [
+        {name: "Mjesta (K)", path: "/pages/21 Izvori/Izvori_K"},
+        {name: "Mjesta (R)", path: "/pages/21 Izvori/Izvori_R"},
+        {name: "Mjesta (E)", path: "/pages/21 Izvori/Izvori_E"}
+      ]
+    } ,  
+    {
+      name: "Države",
+      pages: [
+        {name: "Države (K)", path: "/pages/30 Drzava/Drzava_K"},
+        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"}
+      ]
+    } , 
+    {
+      name: "Katastar",
+      pages: [
+        {name: "Katastar (K)", path: "/pages/31 Katastar/Katastar_K"},
+        {name: "Katastar (D)", path: "/pages/31 Katastar/Katastar_D"},
+        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"}
+      ]
+    } , 
+    {
+      name: "Pismo",
+      pages: [
+        {name: "Pismo (K)", path: "/pages/40 Pismo/Pismo_K"},
+        {name: "Pismo (D)", path: "/pages/40 Pismo/Pismo_D"},
+        {name: "Pismo (E)", path: "/pages/40 Pismo/Pismo_E"}
+      ]
+    } ,   
+    {
+      name: "Bolesti",
+      pages: [
+        {name: "Bolesti (K)", path: "/pages/70 Bolesti/Bolesti_K"},
+        {name: "Bolesti (D)", path: "/pages/70 Bolesti/Bolesti_D"},
+        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_K_E"}
+      ]
+    } ,    
+    {
+      name: "Groblje",
+      pages: [
+        {name: "Groblje (K)", path: "/pages/71 Groblje/Groblje_K"},
+        {name: "Groblje (D)", path: "/pages/71 Groblje/Groblje_D"},
+        {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
+      ]
+    } ,                     
+  ],
 
   // Content to add to the head of the page, e.g. for a favicon:
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
