@@ -67,31 +67,31 @@ export default {
       name: "Kuće",
       pages: [
         {name: "Kuće (K)", path: "/pages/11 Kucedomacin/Kucedomacin_K"},
-        {name: "Kuže (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"}
+        {name: "Kuće (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"}
       ]
     } ,  
     {
       name: "Popisi",
       pages: [
-        {name: "Mjesta (K)", path: "/pages/15 Popisi/Popisi_K"},
-        {name: "Mjesta (R)", path: "/pages/15 Popisi/Popisi_D"},
-        {name: "Mjesta (E)", path: "/pages/15 Popisi/Popisi_E"}
+        {name: "Popisi (K)", path: "/pages/15 Popisi/Popisi_K"},
+        {name: "Popisi (D)", path: "/pages/15 Popisi/Popisi_D"},
+        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"}
       ]
     } ,  
      {
       name: "Zupe",
       pages: [
-        {name: "Mjesta (K)", path: "/pages/20 Zupe/Zupe_K"},
-        {name: "Mjesta (R)", path: "/pages/20 Zupe/Zupe_D"},
-        {name: "Mjesta (E)", path: "/pages/20 Zupe/Zupe_E"}
+        {name: "Župe (K)", path: "/pages/20 Zupe/Zupe_K"},
+        {name: "Župe (R)", path: "/pages/20 Zupe/Zupe_D"},
+        {name: "Župe (E)", path: "/pages/20 Zupe/Zupe_E"}
       ]
     } ,  
     {
       name: "Izvori",
       pages: [
-        {name: "Mjesta (K)", path: "/pages/21 Izvori/Izvori_K"},
-        {name: "Mjesta (D)", path: "/pages/21 Izvori/Izvori_D"},
-        {name: "Mjesta (E)", path: "/pages/21 Izvori/Izvori_E"}
+        {name: "Izvori (K)", path: "/pages/21 Izvori/Izvori_K"},
+        {name: "Izvori (D)", path: "/pages/21 Izvori/Izvori_D"},
+        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"}
       ]
     } ,  
     {
