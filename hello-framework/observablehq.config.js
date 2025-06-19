@@ -19,20 +19,21 @@ export default {
       pages: [
         {name: "Prezime Jular-ić (K)", path: "/pages/1_Jularic/01.1.prezime_ilaric"},
         {name: "Evolucija zapisa (V)", path: "/pages/1_Jularic/01.2.evolucija"},
-        {name: "Generacije (K)",       path: "/pages/2 Generacije/Generacije_K"},
-        {name: "Obitelji (K)",         path: "/pages/2 Obitelji/Obitelji_K"},
-        {name: "Zapisi (K)",           path: "/pages/5 Zapisi/Zapisi_K"},
-        {name: "Migracije (K)",        path: "/pages/9 Migracije/Migracije_K"}, 
-
-        {name: "Mjesta (K)",           path: "/pages/10 Mjesta/Mjesta_K"},  
-        {name: "Kuće (K)",             path: "/pages/11 Kucedomacin/Kucedomacin_K"},
-        {name: "Države (K)",           path: "/pages/30 Drzava/Drzava_K"},
-        {name: "Župe (K)",             path: "/pages/20 Zupe/Zupe_K"}, 
         
-        {name: "Popisi (K)",           path: "/pages/15 Popisi/Popisi_K"},
-        {name: "Pismo (K)",            path: "/pages/40 Pismo/Pismo_K"}, 
-        {name: "Bolesti (K)",          path: "/pages/70 Bolesti/Bolesti_K"},
-        {name: "Groblje (K)",          path: "/pages/71 Groblje/Groblje_K"}
+        {name: "Generacije (K)",       path: "/pages/KONCEPT/Generacije_K"},
+        {name: "Obitelji (K)",         path: "/pages/KONCEPT/Obitelji_K"},
+        {name: "Zapisi (K)",           path: "/pages/KONCEPT/Zapisi_K"},
+        {name: "Migracije (K)",        path: "/pages/KONCEPT/Migracije_K"}, 
+
+        {name: "Mjesta (K)",           path: "/pages/KONCEPT/Mjesta_K"},  
+        {name: "Kuće (K)",             path: "/pages/KONCEPT/Kucedomacin_K"},
+        {name: "Države (K)",           path: "/pages/KONCEPT/Drzava_K"},
+        {name: "Župe (K)",             path: "/pages/KONCEPT/Zupe_K"}, 
+        
+        {name: "Popisi (K)",           path: "/pages/KONCEPT/Popisi_K"},
+        {name: "Pismo (K)",            path: "/pages/KONCEPT/Pismo_K"}, 
+        {name: "Bolesti (K)",          path: "/pages/KONCEPT/Bolesti_K"},
+        {name: "Groblje (K)",          path: "/pages/KONCEPT/Groblje_K"}
 
       ]
     }, 
@@ -41,39 +42,39 @@ export default {
       name: "Rod (Bosna)",
       pages: [
         {name: "Prezime (R)",         path: "/pages/1_Jularic/prezime_r"},
-        {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
-        {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
-        {name: "Zapisi (R)",          path: "/pages/5 Zapisi/Zapisi_R"},        
-        {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},  
+        {name: "Generacije (R)",      path: "/pages/ROD/Generacije_R"},
+        {name: "Obitelji (R)",        path: "/pages/ROD/Obitelji_R"},
+        {name: "Zapisi (R)",          path: "/pages/ROD/Zapisi_R"},        
+        {name: "Migracije (R)",       path: "/pages/ROD/Migracije_R"},  
         
-        {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
-        {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
+        {name: "Mjesta (R)",          path: "/pages/ROD/Mjesta_R"},
+        {name: "Župe (R)",            path: "/pages/ROD/Zupe_D"}, 
         
-        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},   
-        {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
-        {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
-        {name: "Groblje (D)",         path: "/pages/71 Groblje/Groblje_D"},
+        {name: "Popisi (D)",          path: "/pages/ROD/Popisi_D"},   
+        {name: "Pismo (D)",           path: "/pages/ROD/Pismo_D"},
+        {name: "Bolesti (D)",         path: "/pages/ROD/Bolesti_D"},
+        {name: "Groblje (D)",         path: "/pages/ROD/Groblje_D"},
      
       ]
     } , 
     {
       name: "Entiteti",
       pages: [
-        {name: "Obitelji (E)", path: "/pages/2 Obitelji/Obitelji_E"},
-        {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"},
-        {name: "Zapisi (E)",           path: "/pages/5 Zapisi/Zapisi_E"},        
-        {name: "Migracije Individualne (E)", path: "/pages/9 Migracije/Migracije_Individualne_E"},
-        {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"},
+        {name: "Obitelji (E)", path: "/pages/ENTITET/Obitelji_E"},
+        {name: "Obitelji (Z)", path: "/pages/ENTITET/Obitelj_Zapisi"},
+        {name: "Zapisi (E)",   path: "/pages/ENTITET/Zapisi_E"},        
+        {name: "Mig. Ind. (E)", path: "/pages/ENTITET/Migracije_Individualne_E"},
+        {name: "Masovne (E)",   path: "/pages/ENTITET/Migracije_Masovne_E"},
         
-        {name: "Kuće (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"},
-        {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"},
-        {name: "Župe (E)", path: "/pages/20 Zupe/Zupe_E"},
-        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"},         
+        {name: "Kuće (E)",    path: "/pages/ENTITET/Kucedomacin_E"},
+        {name: "Mjesta (E)",  path: "/pages/ENTITET/Mjesta_E"},
+        {name: "Župe (E)",    path: "/pages/ENTITET/Zupe_E"},
+        {name: "Države (E)",  path: "/pages/ENTITET/Drzava_E"},         
         
-        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"},             
-        {name: "Pismo (E)", path: "/pages/40 Pismo/Pismo_E"},
-        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"},
-        {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
+        {name: "Popisi (E)",  path: "/pages/ENTITET/Popisi_E"},             
+        {name: "Pismo (E)",   path: "/pages/ENTITET/Pismo_E"},
+        {name: "Bolesti (E)", path: "/pages/ENTITET/Bolesti_E"},
+        {name: "Groblje (E)", path: "/pages/ENTITET/Groblje_E"}
       ]
     },
           
