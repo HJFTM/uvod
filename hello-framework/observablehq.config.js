@@ -122,7 +122,7 @@ export default {
       pages: [
         {name: "Bolesti (K)", path: "/pages/70 Bolesti/Bolesti_K"},
         {name: "Bolesti (D)", path: "/pages/70 Bolesti/Bolesti_D"},
-        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_K_E"}
+        {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"}
       ]
     } ,    
     {
