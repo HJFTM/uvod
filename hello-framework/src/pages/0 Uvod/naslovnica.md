@@ -1,5 +1,5 @@
 ---
 title: Naslovnica
 ---
-<iframe width="100%" height="2500" frameborder="0"
-  src="https://observablehq.com/embed/@ftm/naslovnica?cell=*&api_key=42d4a87350391d5f864b2cdc2e7de206f1f449e8"></iframe>
+<iframe width="100%" height="500" frameborder="0"
+  src="https://observablehq.com/embed/@ftm/naslovnica@41?cell=*&api_key=a2d3bf3cb76a2eb35e3b14bf2f9f12040fc7f704"></iframe>
