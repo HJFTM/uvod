@@ -10,9 +10,9 @@
 
 <script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
 <script>
-  iFrameResize({
-    log: true, // uključi logove za debug
-    checkOrigin: false,
-    heightCalculationMethod: 'max'
-  }, '#observable-iframe');
+iFrameResize({
+  log: true,
+  checkOrigin: false,
+  heightCalculationMethod: 'lowestElement'  // ili 'taggedElement'
+}, '#observable-iframe');
 </script>
