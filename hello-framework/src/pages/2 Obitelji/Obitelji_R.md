@@ -1,2 +1,9 @@
-<iframe width="100%" height="2500" frameborder="0"
-  src="https://observablehq.com/embed/e61464c9bcf6d8de?cell=*&api_key=9b373a992353712115d77660cf2a98084dd8b91b"></iframe>
+<div id="observablehq-cee91122"></div>
+<p>Credit: <a href="https://observablehq.com/d/e61464c9bcf6d8de">OBITELJI (R) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/e61464c9bcf6d8de.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-cee91122"));
+</script>
