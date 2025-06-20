@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/8dc7b2ea81c182ac?cell=*&api_key=d6fe58c8ea502b9a3d6f39a4893fa5b225ed654b"></iframe>
+<div id="observablehq-a8967e9f"></div>
+<p>Credit: <a href="https://observablehq.com/d/8dc7b2ea81c182ac">Država (K) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/8dc7b2ea81c182ac.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-a8967e9f"));
+</script>
