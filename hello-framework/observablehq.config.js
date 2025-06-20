@@ -70,7 +70,40 @@ export default {
         {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"},
         {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
       ]
-    }                  
+    } ,
+
+     {
+      name: "Rodovi",
+      children: [
+        {
+          name: "Bosna",
+          children: [
+            { name: "Generacije", path: "/pages/71 Groblje/Groblje_E" },
+            { name: "Obitelji", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Migracije", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Mjesta", path: "/pages/71 Groblje/Groblje_E" }
+          ]
+        },
+        {
+          name: "XXXX",
+          children: [
+            { name: "Generacije", path: "/pages/71 Groblje/Groblje_E" },
+            { name: "Obitelji", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Migracije", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Mjesta", path: "/pages/71 Groblje/Groblje_E" }
+          ]
+        },
+        {
+          name: "Durbovaćka",
+          children: [
+            { name: "Generacije", path: "/pages/71 Groblje/Groblje_E" },
+            { name: "Obitelji", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Migracije", path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Mjesta", path: "/pages/71 Groblje/Groblje_E" }
+          ]
+        },
+      ]
+        
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
