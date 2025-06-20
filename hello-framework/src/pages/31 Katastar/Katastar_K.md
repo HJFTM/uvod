@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/9b7a1339870a4c4a?cell=*&api_key=74cd75b850647aed6df548d346a113156860f4ef"></iframe>
+<div id="observablehq-3fa7ae10"></div>
+<p>Credit: <a href="https://observablehq.com/d/9b7a1339870a4c4a">Katastar (K) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/9b7a1339870a4c4a.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-3fa7ae10"));
+</script>
