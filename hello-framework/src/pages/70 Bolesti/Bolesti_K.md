@@ -8,14 +8,3 @@
 
 </div>
 
-<script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
-<script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
-<script>
-  iFrameResize({
-    checkOrigin: false,
-    log: false,
-    heightCalculationMethod: 'max', // pokušaj i 'lowestElement' ako treba
-    resizeFrom: 'child',
-    warningTimeout: 10000
-  }, '#observable-iframe');
-</script>
