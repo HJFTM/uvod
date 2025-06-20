@@ -1,6 +1,9 @@
-<iframe 
-  width="100%" 
-  height="2500" 
-  frameborder="0"
-  src="https://observablehq.com/embed/410aa8aa83984092?param=Bosna&cell=*&api_key=c4b1ded1406ba4614995db8c26bcfabee79483eb">
-</iframe>
+<div id="observablehq-9e560aac"></div>
+<p>Credit: <a href="https://observablehq.com/d/410aa8aa83984092">Generacije (R) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/410aa8aa83984092.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-9e560aac"));
+</script>
