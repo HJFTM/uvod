@@ -1,2 +1,9 @@
-<iframe width="100%" height="2500" frameborder="0"
-  src="https://observablehq.com/embed/691f061675182fed?cell=*&api_key=ce4f8fc1a9bcd0821b2d14952b263c68f80bc284"></iframe>
+<div id="observablehq-e2ed6256"></div>
+<p>Credit: <a href="https://observablehq.com/d/691f061675182fed">POPISI (K) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/691f061675182fed.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-e2ed6256"));
+</script>
