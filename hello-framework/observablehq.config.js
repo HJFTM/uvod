@@ -9,14 +9,14 @@ export default {
    pages: [
      {
        name: "Uvod",
-       pages: [
+       children: [
          {name: "Naslovnica", path: "/pages/0 Uvod/naslovnica"},
          {name: "Uvod", path: "/pages/0 Uvod/uvod"}
       ]
      },
      {
       name: "Jularić",
-      pages: [
+      children: [
         {name: "Prezime Jular-ić (K)", path: "/pages/1_Jularic/01.1.prezime_ilaric"},
         {name: "Evolucija zapisa (V)", path: "/pages/1_Jularic/01.2.evolucija"},
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
@@ -37,7 +37,7 @@ export default {
     }, 
     {
       name: "Rod",
-      pages: [
+      children: [
 
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
@@ -54,7 +54,7 @@ export default {
     } , 
     {
       name: "Entiteti",
-      pages: [
+      children: [
         {name: "Obitelji (E)", path: "/pages/2 Obitelji/Obitelji_E"},
         {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"},
         {name: "Migracije Individualne (E)", path: "/pages/9 Migracije/Migracije_Individualne_E"},
@@ -78,10 +78,10 @@ export default {
         {
           name: "Bosna",
           children: [
-            { name: "Generacije", path: "/pages/71 Groblje/Groblje_E" },
-            { name: "Obitelji", path: "/pages/71 Groblje/Groblje_E"},
-            { name: "Migracije", path: "/pages/71 Groblje/Groblje_E"},
-            { name: "Mjesta", path: "/pages/71 Groblje/Groblje_E" }
+            { name: "Generacije",     path: "/pages/71 Groblje/Groblje_E" },
+            { name: "Obitelji",       path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Migracije",     path: "/pages/71 Groblje/Groblje_E"},
+            { name: "Mjesta",       path: "/pages/71 Groblje/Groblje_E" }
           ]
         },
         {
