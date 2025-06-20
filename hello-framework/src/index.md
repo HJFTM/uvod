@@ -9,13 +9,29 @@ toc: false
 </div>
 
 <div class="hero">
-<div id="observablehq-mapa-1629fb32"></div>
+<div id="observablehq-mapa-ecaa107d"></div>
+<p>Credit: <a href="https://observablehq.com/d/b313e21d5ed7eb88@247">Sela (Mjesta) (K) by FTM</a></p>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/702564761cbe308e@200.js?v=4";
+import define from "https://api.observablehq.com/d/b313e21d5ed7eb88@247.js?v=4";
 new Runtime().module(define, name => {
-  if (name === "mapa") return new Inspector(document.querySelector("#observablehq-mapa-1629fb32"));
+  if (name === "mapa") return new Inspector(document.querySelector("#observablehq-mapa-ecaa107d"));
+});
+</script>
+</div>
+
+<div class="hero">
+<div id="observablehq-migracije-b0368596"></div>
+<p>Credit: <a href="https://observablehq.com/d/d1e5a145fe2b4455@251">Migracije (K) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/d1e5a145fe2b4455@251.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "migracije") return new Inspector(document.querySelector("#observablehq-migracije-b0368596"));
 });
 </script>
 </div>
