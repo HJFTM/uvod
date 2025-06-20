@@ -1,4 +1,12 @@
 <div class="card" style="max-width: 640px;">
-<iframe width="100%" height="1200f rameborder="0"
-  src="https://observablehq.com/embed/f777e930c0aec7f8@217?cell=*&api_key=6b801b6aab523ffb4f54b3b3bad486e78b282146"></iframe>
+  <iframe
+    width="100%"
+    style="border: none"
+    src="https://observablehq.com/embed/f777e930c0aec7f8@217?cell=*&api_key=6b801b6aab523ffb4f54b3b3bad486e78b282146"
+  ></iframe>
 </div>
+
+<script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
+<script>
+  iFrameResize({ log: false }, 'iframe');
+</script>
