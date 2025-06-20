@@ -10,13 +10,13 @@
 <link rel="preload" as="style" href="../../_observablehq/theme-air,near-midnight.dcdbf18e.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="../../_observablehq/theme-air,near-midnight.dcdbf18e.css">
-<link rel="modulepreload" href="../../_observablehq/client.60ad0c52.js">
+<link rel="modulepreload" href="../../_observablehq/client.3f958287.js">
 <link rel="modulepreload" href="../../_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib.ec062f48.js">
 <link rel="icon" href="../../_file/observable.1af93621.png" type="image/png" sizes="32x32">
 <script type="module">
 
-import "../../_observablehq/client.60ad0c52.js";
+import "../../_observablehq/client.3f958287.js";
 
 </script>
 </head>
@@ -100,16 +100,20 @@ import "../../_observablehq/client.60ad0c52.js";
 </aside>
 <main id="observablehq-main" class="observablehq">
 <div class="card" style="max-width: 640px;">
-  <iframe width="100%" style="border: none" src="https://observablehq.com/embed/f777e930c0aec7f8?cell=*&amp;standalone=1&amp;api_key=6b801b6aab523ffb4f54b3b3bad486e78b282146"></iframe>
+  <iframe id="observable-iframe" width="100%" style="border:none; overflow:hidden;" scrolling="no" src="https://observablehq.com/embed/f777e930c0aec7f8@217?cell=*&amp;standalone=1&amp;api_key=6b801b6aab523ffb4f54b3b3bad486e78b282146"></iframe>
 </div>
 <script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
 <script>
-  iFrameResize({ log: false }, 'iframe');
+  iFrameResize({
+    log: false,
+    checkOrigin: false,  // probaj ovo ako ima problema sa sigurnosnim porukama
+    heightCalculationMethod: 'bodyScroll'  // ponekad bolje za Observable sadržaje
+  }, '#observable-iframe');
 </script>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="../40%20Pismo/Pismo_K"><span>Pismo (K)</span></a><a rel="next" href="../71%20Groblje/Groblje_K"><span>Groblje (K)</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-06-20T06:11:59">Jun 20, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-06-20T06:13:01">Jun 20, 2025</a>.</div>
 </footer>
 </div>
 </body>
