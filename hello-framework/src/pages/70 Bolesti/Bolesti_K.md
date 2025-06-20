@@ -1,19 +1,14 @@
-<div class="card" style="max-width: 960px; margin: auto;">
-  <iframe
-    id="observable-iframe"
-    src="https://observablehq.com/embed/f777e930c0aec7f8?cell=*&standalone=1&api_key=6184202a35d346d61eae2298a5663b7b87d01d0c"
-    style="width: 100%; border: none;"
-    scrolling="no"
-    frameborder="0"
-  ></iframe>
-</div>
+<!-- Na vrhu stranice -->
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import notebook from "https://api.observablehq.com/d/f777e930c0aec7f8@217.js?api_key=6184...";
 
-
-<script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
-<script>
-  iFrameResize({
-    checkOrigin: false,
-    log: false,
-    heightCalculationMethod: 'max'
-  }, '#observable-iframe');
+  const main = new Runtime().module(notebook, name => {
+    const dom = document.getElementById(name);
+    return Inspector.into(dom);
+  });
 </script>
+
+<!-- Tampon za sve cell-ove iz notebooka -->
+<div id="chart"></div>
+<div id="anotherCell"></div>
