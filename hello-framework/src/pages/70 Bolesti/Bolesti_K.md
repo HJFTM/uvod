@@ -13,6 +13,7 @@
 iFrameResize({
   log: true,
   checkOrigin: false,
-  heightCalculationMethod: 'lowestElement'  // ili 'taggedElement'
+  heightCalculationMethod: 'lowestElement',
+  resizeFrom: 'child'
 }, '#observable-iframe');
 </script>
