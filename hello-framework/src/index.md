@@ -3,9 +3,23 @@ toc: false
 ---
 
 <div class="hero">
-  <h1>Hello Framework</h1>
+  <h1>Prezime Jularić</h1>
   <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
   <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
+</div>
+
+<div class="hero">
+<div id="observablehq-mapa-1629fb32"></div>
+<p>Credit: <a href="https://observablehq.com/d/702564761cbe308e@200">MJESTO - Obitelj (R) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/702564761cbe308e@200.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "mapa") return new Inspector(document.querySelector("#observablehq-mapa-1629fb32"));
+});
+</script>
 </div>
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
