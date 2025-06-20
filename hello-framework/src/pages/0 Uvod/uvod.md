@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/814307512a1d2b68?cell=*&api_key=76548fb15a95d51852d3e4ae4c4ac70c58969f10"></iframe>
+<div id="observablehq-bb901010"></div>
+<p>Credit: <a href="https://observablehq.com/d/814307512a1d2b68">Tragovi kroz vrijeme by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/814307512a1d2b68.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-bb901010"));
+</script>
