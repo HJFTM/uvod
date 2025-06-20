@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/233b533788f65a58?cell=*&api_key=cffdb5e2cbe017a8bf432a9993b6d5fe25ae749b"></iframe>
+<div id="observablehq-78edc4cd"></div>
+<p>Credit: <a href="https://observablehq.com/d/233b533788f65a58">Jezik i pismo (D) Izvor by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/233b533788f65a58.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-78edc4cd"));
+</script>
