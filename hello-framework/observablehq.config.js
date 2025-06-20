@@ -36,7 +36,7 @@ export default {
       ]
     }, 
     {
-      name: "Rod",
+      name: "Rod (Bosna)",
       pages: [
 
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
