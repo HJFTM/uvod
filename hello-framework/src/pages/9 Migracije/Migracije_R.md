@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/406804dcf91a0e67?cell=*&api_key=d9050e43e1ebad06c11673a1f43bc35e63cbbc33"></iframe>
+<div id="observablehq-3953e99a"></div>
+<p>Credit: <a href="https://observablehq.com/d/406804dcf91a0e67">Migracije (R) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/406804dcf91a0e67.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-3953e99a"));
+</script>
