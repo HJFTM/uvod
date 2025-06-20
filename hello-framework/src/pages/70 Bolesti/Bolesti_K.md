@@ -2,7 +2,7 @@
   <iframe
     id="observable-iframe"
     width="100%"
-    style="border:none; overflow:hidden;"
+    style="border:none; overflow:hidden; min-height:800px;"
     scrolling="no"
     src="https://observablehq.com/embed/f777e930c0aec7f8@217?cell=*&standalone=1&api_key=6b801b6aab523ffb4f54b3b3bad486e78b282146"
   ></iframe>
@@ -11,8 +11,8 @@
 <script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
 <script>
   iFrameResize({
-    log: false,
-    checkOrigin: false,  // probaj ovo ako ima problema sa sigurnosnim porukama
-    heightCalculationMethod: 'bodyScroll'  // ponekad bolje za Observable sadržaje
+    log: true, // uključi logove za debug
+    checkOrigin: false,
+    heightCalculationMethod: 'max'
   }, '#observable-iframe');
 </script>
