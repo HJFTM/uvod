@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/fb586fa98300545b?cell=*&api_key=cb4dede47027450fecdf47e906f8d81d00b04e7b"></iframe>
+<div id="observablehq-200e2b67"></div>
+<p>Credit: <a href="https://observablehq.com/d/fb586fa98300545b">Masovne Migracije (E) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/fb586fa98300545b.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-200e2b67"));
+</script>
