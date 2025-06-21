@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/3782f7950df08aaf@196?cell=*&api_key=ba558893e63ed2dfc6fa111bcf125fcc67ec2066"></iframe>
+<div id="observablehq-fe81a032"></div>
+<p>Credit: <a href="https://observablehq.com/d/3782f7950df08aaf">BOLEST (E) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/3782f7950df08aaf.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-fe81a032"));
+</script>
