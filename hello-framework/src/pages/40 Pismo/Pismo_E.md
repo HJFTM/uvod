@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/3239bc848bdd0a49?cell=*&api_key=fbce3544ff25acaa03b2d9b8fae7afcd03491642"></iframe>
+<div id="observablehq-4ba42117"></div>
+<p>Credit: <a href="https://observablehq.com/d/3239bc848bdd0a49">PISMO / JEZIK (E) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/3239bc848bdd0a49.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-4ba42117"));
+</script>
