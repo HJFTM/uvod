@@ -1,2 +1,9 @@
-<iframe width="100%" height="1500" frameborder="0"
-  src="https://observablehq.com/embed/e30398d0197e9967?cell=*&api_key=e9d3605d5773026ec66d1e4d3b8f43b09657a8d9"></iframe>
+<div id="observablehq-13dba597"></div>
+<p>Credit: <a href="https://observablehq.com/d/e30398d0197e9967">ŽUPA (E) by FTM</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/e30398d0197e9967.js?v=4";
+new Runtime().module(define, Inspector.into("#observablehq-13dba597"));
+</script>
