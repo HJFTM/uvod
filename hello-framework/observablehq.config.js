@@ -21,7 +21,8 @@ export default {
         {name: "Evolucija zapisa (V)", path: "/pages/1_Jularic/01.2.evolucija"},
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
         {name: "Generacije (K)",       path: "/pages/2 Generacije/Generacije_K"},
-        {name: "Obitelji (K)",         path: "/pages/2 Obitelji/Obitelji_K"}, 
+        {name: "Obitelji (K)",         path: "/pages/2 Obitelji/Obitelji_K"},
+        {name: "Zapisi (K)",           path: "/pages/5 Zapisi/Zapisi_K"},
         {name: "Migracije (K)",        path: "/pages/9 Migracije/Migracije_K"}, 
         {name: "Mjesta (K)",           path: "/pages/10 Mjesta/Mjesta_K"},  
         {name: "Kuće (K)",             path: "/pages/11 Kucedomacin/Kucedomacin_K"},
@@ -41,6 +42,7 @@ export default {
 
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
+        {name: "Zapisi (R)",           path: "/pages/5 Zapisi/Zapisi_R"},        
         {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},   
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
@@ -57,6 +59,7 @@ export default {
       pages: [
         {name: "Obitelji (E)", path: "/pages/2 Obitelji/Obitelji_E"},
         {name: "Obitelji (Z)", path: "/pages/2 Obitelji/Obitelj_Zapisi"},
+        {name: "Zapisi (E)",           path: "/pages/5 Zapisi/Zapisi_E"},        
         {name: "Migracije Individualne (E)", path: "/pages/9 Migracije/Migracije_Individualne_E"},
         {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"},
         {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"},
