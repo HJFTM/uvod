@@ -10,8 +10,9 @@ export default {
      {
        name: "Uvod",
        pages: [
-         {name: "Naslovnica", path: "/pages/0 Uvod/naslovnica"},
-         {name: "Uvod", path: "/pages/0 Uvod/uvod"}
+         {name: "Naslovnica",   path: "/pages/0 Uvod/naslovnica"},
+         {name: "Uvod",         path: "/pages/0 Uvod/uvod"},
+         {name: "Događaji",     path: "/pages/0 Uvod/dogadjaji"}
       ]
      },
      {
