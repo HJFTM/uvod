@@ -30,7 +30,7 @@ export default {
         {name: "Države (K)",           path: "/pages/KONCEPT/Drzava_K"},
         {name: "Župe (K)",             path: "/pages/KONCEPT/Zupe_K"}, 
         
-        {name: "Popisi (K)",           path: "/pages/KONCEPT/Popisi_K"},
+        {name: "Izvori* (K)",          path: "/pages/KONCEPT/Popisi_K"},
         {name: "Pismo (K)",            path: "/pages/KONCEPT/Pismo_K"}, 
         {name: "Bolesti (K)",          path: "/pages/KONCEPT/Bolesti_K"},
         {name: "Groblje (K)",          path: "/pages/KONCEPT/Groblje_K"}
@@ -50,7 +50,7 @@ export default {
         {name: "Mjesta (R)",          path: "/pages/ROD/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/ROD/Zupe_D"}, 
         
-        {name: "Popisi (D)",          path: "/pages/ROD/Popisi_D"},   
+        {name: "Izvori* (D)",          path: "/pages/ROD/Popisi_D"},   
         {name: "Pismo (D)",           path: "/pages/ROD/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/ROD/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/ROD/Groblje_D"},
@@ -71,7 +71,7 @@ export default {
         {name: "Župe (E)",    path: "/pages/ENTITET/Zupe_E"},
         {name: "Države (E)",  path: "/pages/ENTITET/Drzava_E"},         
         
-        {name: "Popisi (E)",  path: "/pages/ENTITET/Popisi_E"},             
+        {name: "Izvori* (E)",  path: "/pages/ENTITET/Popisi_E"},             
         {name: "Pismo (E)",   path: "/pages/ENTITET/Pismo_E"},
         {name: "Bolesti (E)", path: "/pages/ENTITET/Bolesti_E"},
         {name: "Groblje (E)", path: "/pages/ENTITET/Groblje_E"}
