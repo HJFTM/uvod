@@ -19,6 +19,7 @@ export default {
       name: "Jularić",
       pages: [
         {name: "Prezime Jular-ić (K)", path: "/pages/1_Jularic/01.1.prezime_ilaric"},
+        {name: "Slična prezimena (K)", path: "/pages/1_Prezime/prezime_slicno"},        
         {name: "Evolucija zapisa (V)", path: "/pages/1_Jularic/01.2.evolucija"},
         
         {name: "Generacije (K)",       path: "/pages/KONCEPT/Generacije_K"},
