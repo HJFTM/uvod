@@ -64,13 +64,13 @@ export default {
         {name: "Zapisi (E)",           path: "/pages/5 Zapisi/Zapisi_E"},        
         {name: "Migracije Individualne (E)", path: "/pages/9 Migracije/Migracije_Individualne_E"},
         {name: "Migracije Masovne (E)", path: "/pages/9 Migracije/Migracije_Masovne_E"},
-        {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"},
+        
         {name: "Kuće (E)", path: "/pages/11 Kucedomacin/Kucedomacin_E"},
-        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"},       
+        {name: "Mjesta (E)", path: "/pages/10 Mjesta/Mjesta_E"},
         {name: "Župe (E)", path: "/pages/20 Zupe/Zupe_E"},
-        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"},
-        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"}, 
-        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"}, 
+        {name: "Države (E)", path: "/pages/30 Drzava/Drzava_E"},         
+        
+        {name: "Popisi (E)", path: "/pages/15 Popisi/Popisi_E"},             
         {name: "Pismo (E)", path: "/pages/40 Pismo/Pismo_E"},
         {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"},
         {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
@@ -84,9 +84,10 @@ export default {
 
         {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
         {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
+        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"},   
         
         {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
-
+        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"},
         {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},             
       ]
     } ,  
