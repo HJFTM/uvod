@@ -45,13 +45,14 @@ export default {
         {name: "Prezime (R)",         path: "/pages/1_Jularic/prezime_r"},
         {name: "Generacije (R)",      path: "/pages/ROD/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/ROD/Obitelji_R"},
+        {name: "Stablo (R)",          path: "/pages/ROD/Stablo_R"},        
         {name: "Zapisi (R)",          path: "/pages/ROD/Zapisi_R"},        
         {name: "Migracije (R)",       path: "/pages/ROD/Migracije_R"},  
         
         {name: "Mjesta (R)",          path: "/pages/ROD/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/ROD/Zupe_D"}, 
         
-        {name: "Izvori* (D)",          path: "/pages/ROD/Popisi_D"},   
+        {name: "Izvori* (D)",         path: "/pages/ROD/Popisi_D"},   
         {name: "Pismo (D)",           path: "/pages/ROD/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/ROD/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/ROD/Groblje_D"},
