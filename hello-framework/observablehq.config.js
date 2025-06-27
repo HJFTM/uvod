@@ -19,21 +19,24 @@ export default {
       pages: [
         {name: "Prezime Jular-ić (K)", path: "/pages/1_Jularic/01.1.prezime_ilaric"},
         {name: "Evolucija zapisa (V)", path: "/pages/1_Jularic/01.2.evolucija"},
-        {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
         {name: "Generacije (K)",       path: "/pages/2 Generacije/Generacije_K"},
         {name: "Obitelji (K)",         path: "/pages/2 Obitelji/Obitelji_K"},
         {name: "Zapisi (K)",           path: "/pages/5 Zapisi/Zapisi_K"},
         {name: "Migracije (K)",        path: "/pages/9 Migracije/Migracije_K"}, 
+
         {name: "Mjesta (K)",           path: "/pages/10 Mjesta/Mjesta_K"},  
         {name: "Kuće (K)",             path: "/pages/11 Kucedomacin/Kucedomacin_K"},
-        {name: "Popisi (K)",           path: "/pages/15 Popisi/Popisi_K"},
-        {name: "Župe (K)",             path: "/pages/20 Zupe/Zupe_K"}, 
-        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
         {name: "Države (K)",           path: "/pages/30 Drzava/Drzava_K"},
-        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},
+        {name: "Župe (K)",             path: "/pages/20 Zupe/Zupe_K"}, 
+        
+        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
         {name: "Pismo (K)",            path: "/pages/40 Pismo/Pismo_K"}, 
         {name: "Bolesti (K)",          path: "/pages/70 Bolesti/Bolesti_K"},
         {name: "Groblje (K)",          path: "/pages/71 Groblje/Groblje_K"}
+        
+        // {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
+        // {name: "Popisi (K)",           path: "/pages/15 Popisi/Popisi_K"},
+        // {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},
       ]
     }, 
     {
