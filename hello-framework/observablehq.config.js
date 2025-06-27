@@ -29,7 +29,7 @@ export default {
         {name: "Države (K)",           path: "/pages/30 Drzava/Drzava_K"},
         {name: "Župe (K)",             path: "/pages/20 Zupe/Zupe_K"}, 
         
-        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
+        {name: "Izvori (K)",           path: "/pages/15 Popisi/Popisi_K"},
         {name: "Pismo (K)",            path: "/pages/40 Pismo/Pismo_K"}, 
         {name: "Bolesti (K)",          path: "/pages/70 Bolesti/Bolesti_K"},
         {name: "Groblje (K)",          path: "/pages/71 Groblje/Groblje_K"}
@@ -41,8 +41,9 @@ export default {
       name: "Izvori",
       pages: [
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
-        {name: "Popisi (K)",           path: "/pages/15 Popisi/Popisi_K"},
-        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},     
+
+        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
+        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
       ]
     } ,      
     {
