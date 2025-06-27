@@ -50,6 +50,7 @@ export default {
         {name: "Migracije (R)",       path: "/pages/ROD/Migracije_R"},  
         
         {name: "Mjesta (R)",          path: "/pages/ROD/Mjesta_R"},
+        {name: "Mjesta-zapisi (R)",          path: "/pages/KONCEPT/Mjesta_zapisi_R"},          
         {name: "Župe (R)",            path: "/pages/ROD/Zupe_D"}, 
         {name: "Župe Rodos. (R)",     path: "/pages/ROD/Zupe_rodoslovlje_R"}, 
         {name: "Župe Obitelji (R)",     path: "/pages/ROD/Zupe_obitelji_R"}, 
