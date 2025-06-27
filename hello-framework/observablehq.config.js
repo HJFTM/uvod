@@ -53,9 +53,7 @@ export default {
         {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/71 Groblje/Groblje_D"},
-
-        {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
-        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},        
+     
       ]
     } , 
     {
@@ -85,7 +83,11 @@ export default {
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
 
         {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
+        {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
+        
         {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
+        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},   
+        
       ]
     } ,  
   ],
