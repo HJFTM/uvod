@@ -29,7 +29,7 @@ export default {
         {name: "Države (K)",           path: "/pages/30 Drzava/Drzava_K"},
         {name: "Župe (K)",             path: "/pages/20 Zupe/Zupe_K"}, 
         
-        {name: "Izvori (K)",           path: "/pages/15 Popisi/Popisi_K"},
+        {name: "Popisi (K)",           path: "/pages/15 Popisi/Popisi_K"},
         {name: "Pismo (K)",            path: "/pages/40 Pismo/Pismo_K"}, 
         {name: "Bolesti (K)",          path: "/pages/70 Bolesti/Bolesti_K"},
         {name: "Groblje (K)",          path: "/pages/71 Groblje/Groblje_K"}
@@ -48,8 +48,8 @@ export default {
         
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
-        
-        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},        
+        {name: "---"},
+        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},   
         {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/71 Groblje/Groblje_D"},
@@ -86,8 +86,8 @@ export default {
         {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
         
         {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
-        {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},   
-        
+
+        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},             
       ]
     } ,  
   ],
