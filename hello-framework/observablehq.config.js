@@ -83,13 +83,13 @@ export default {
       pages: [
         {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
 
-        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
-        {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
-        {name: "Katastar (E)", path: "/pages/31 Katastar/Katastar_E"},   
+        {name: "Katastar (K)",         path: "/pages/KONCEPT/Katastar_K"},  
+        {name: "Katastar (D)",         path: "/pages/ROD/Katastar_D"},
+        {name: "Katastar (E)",         path: "/pages/ENTITET/Katastar_E"},   
         
-        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
-        {name: "Izvori (E)", path: "/pages/21 Izvori/Izvori_E"},
-        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},             
+        {name: "Izvori (K)",           path: "/pages/KONCEPT/Izvori_K"},
+        {name: "Izvori (D)",          path: "/pages/ROD/Izvori_D"},   
+        {name: "Izvori (E)",            path: "/pages/ENTITET/Izvori_E"}          
       ]
     } ,  
   ],
