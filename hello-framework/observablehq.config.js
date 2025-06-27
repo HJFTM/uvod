@@ -26,7 +26,8 @@ export default {
         {name: "Brakovi (K)",           path: "/pages/KONCEPT/Brakovi_K"},        
         {name: "Zapisi (K)",           path: "/pages/KONCEPT/Zapisi_K"},
         {name: "Migracije (K)",        path: "/pages/KONCEPT/Migracije_K"}, 
-
+        {name: "Migracije (K)",        path: "/pages/KONCEPT/Migracije_masovne_K"}, 
+        
         {name: "Mjesta (K)",           path: "/pages/KONCEPT/Mjesta_K"},  
         {name: "Kuće (K)",             path: "/pages/KONCEPT/Kucedomacin_K"},
         {name: "Države (K)",           path: "/pages/KONCEPT/Drzava_K"},
