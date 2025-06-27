@@ -48,7 +48,7 @@ export default {
         
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
-        {name: "---"},
+        
         {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},   
         {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
