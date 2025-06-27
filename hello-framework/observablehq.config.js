@@ -23,6 +23,7 @@ export default {
         
         {name: "Generacije (K)",       path: "/pages/KONCEPT/Generacije_K"},
         {name: "Obitelji (K)",         path: "/pages/KONCEPT/Obitelji_K"},
+        {name: "Brakovi (K)",           path: "/pages/KONCEPT/Brakovi_K"},        
         {name: "Zapisi (K)",           path: "/pages/KONCEPT/Zapisi_K"},
         {name: "Migracije (K)",        path: "/pages/KONCEPT/Migracije_K"}, 
 
