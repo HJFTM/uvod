@@ -44,14 +44,17 @@ export default {
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
         {name: "Zapisi (R)",          path: "/pages/5 Zapisi/Zapisi_R"},        
-        {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},   
+        {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},  
+        
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
-        {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
+        
+        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},        
         {name: "Pismo (D)",           path: "/pages/40 Pismo/Pismo_D"},
         {name: "Bolesti (D)",         path: "/pages/70 Bolesti/Bolesti_D"},
         {name: "Groblje (D)",         path: "/pages/71 Groblje/Groblje_D"},
-        {name: "Izvori (D)",          path: "/pages/21 Izvori/Izvori_D"},
+
+        {name: "Katastar (D)",        path: "/pages/31 Katastar/Katastar_D"},
         {name: "Popisi (D)",          path: "/pages/15 Popisi/Popisi_D"},        
       ]
     } , 
