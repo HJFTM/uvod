@@ -52,7 +52,7 @@ export default {
         {name: "Mjesta (R)",          path: "/pages/ROD/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/ROD/Zupe_D"}, 
         {name: "Župe Rodos. (R)",     path: "/pages/ROD/Zupe_rodoslovlje_R"}, 
-        {name: "Župe Rodos. (R)",     path: "/pages/ROD/Zupe_obitelji_R"}, 
+        {name: "Župe Obitelji (R)",     path: "/pages/ROD/Zupe_obitelji_R"}, 
         
         {name: "Izvori* (D)",         path: "/pages/ROD/Popisi_D"},   
         {name: "Pismo (D)",           path: "/pages/ROD/Pismo_D"},
