@@ -40,10 +40,10 @@ export default {
     {
       name: "Rod (Bosna)",
       pages: [
-
+        {name: "Prezime (R)",         path: "/pages/1_Jularic/prezime_r"},
         {name: "Generacije (R)",      path: "/pages/2 Generacije/Generacije_R"},
         {name: "Obitelji (R)",        path: "/pages/2 Obitelji/Obitelji_R"},
-        {name: "Zapisi (R)",           path: "/pages/5 Zapisi/Zapisi_R"},        
+        {name: "Zapisi (R)",          path: "/pages/5 Zapisi/Zapisi_R"},        
         {name: "Migracije (R)",       path: "/pages/9 Migracije/Migracije_R"},   
         {name: "Mjesta (R)",          path: "/pages/10 Mjesta/Mjesta_R"},
         {name: "Župe (R)",            path: "/pages/20 Zupe/Zupe_D"}, 
