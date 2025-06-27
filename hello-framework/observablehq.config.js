@@ -30,7 +30,7 @@ export default {
         
         {name: "Mjesta (K)",           path: "/pages/KONCEPT/Mjesta_K"},  
         {name: "Kuće (K)",             path: "/pages/KONCEPT/Kucedomacin_K"},
-        {name: "Popis stanocnika (K)", path: "/pages/KONCEPT/Popis_stanovnika.md"},
+        {name: "Popis stanocnika (K)", path: "/pages/KONCEPT/Popis_stanovnika_K.md"},
         {name: "Države (K)",           path: "/pages/KONCEPT/Drzava_K"},
         {name: "Župe (K)",             path: "/pages/KONCEPT/Zupe_K"}, 
         
