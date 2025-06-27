@@ -38,11 +38,6 @@ new Runtime().module(define, name => {
 
 ---
 
-## Next steps
-- Dobivanje Autorskih prava   
-- Interni review  
-- Prikupljanje podataka (Sivša, Kulaši, Koraće ...)  
-
 <style>
 
 .hero {
