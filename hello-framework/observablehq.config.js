@@ -36,16 +36,7 @@ export default {
 
       ]
     }, 
-     
-  {
-      name: "Izvori",
-      pages: [
-        {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
-
-        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
-        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
-      ]
-    } ,      
+    
     {
       name: "Rod (Bosna)",
       pages: [
@@ -83,7 +74,17 @@ export default {
         {name: "Bolesti (E)", path: "/pages/70 Bolesti/Bolesti_E"},
         {name: "Groblje (E)", path: "/pages/71 Groblje/Groblje_E"}
       ]
-    }                  
+    },
+          
+  {
+      name: "Izvori",
+      pages: [
+        {name: "Prezime (E)",          path: "/pages/1_Jularic/01.3.prezime_e"},
+
+        {name: "Katastar (K)",         path: "/pages/31 Katastar/Katastar_K"},  
+        {name: "Izvori (K)",           path: "/pages/21 Izvori/Izvori_K"}, 
+      ]
+    } ,  
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
