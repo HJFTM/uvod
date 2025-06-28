@@ -104,8 +104,17 @@ export default {
     } ,  
   ],
   
+dynamicPaths: () => {
+  // Učitaj podatke iz JSON-a ili modula
+  const data = [
+    { OBITELJ: "1831. Stjepan" },
+    { OBITELJ: "1700. Marko" }
+  ]; // niz objekata obitelj
 
-  dynamicPaths: [
+  return data.map(d => `/pages/ENTITET/obitelj/${encodeURIComponent(d.OBITELJ)}`);
+}
+  
+  dynamicPaths1: [
     "/pages/ENTITET/obitelj/1831. Stjepan",
     "/pages/ENTITET/obitelj/1700. Marko",
     "/pages/ENTITET/obitelj/1839. Nikola",
