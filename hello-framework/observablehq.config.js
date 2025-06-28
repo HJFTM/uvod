@@ -70,8 +70,7 @@ export default {
     {
       name: "Entiteti",
       pages: [
-        {name: "1700. Marko", path: "/pages/ENTITET/Obitelji_E?OBITELJ=1700. Marko"},
-        
+       
         {name: "Obitelji (E)", path: "/pages/ENTITET/Obitelji_E"},
         
         {name: "Obitelji (Z)", path: "/pages/ENTITET/Obitelj_Zapisi"},
