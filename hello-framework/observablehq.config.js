@@ -1,15 +1,15 @@
 import fs from "fs";
 import path from "path";
 
-// ✅ 1. Učitaj JSON datoteku odmah
+// 1. Učitaj JSON datoteku odmah
 const filePath = path.resolve("src/data/obitelji.json");
 const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
-// ✅ 2. Uzmi obitelji iz data.json
-const obitelji = data.filter(o => o.ROD == "Bosna") || [];
+// 2. Uzmi obitelji iz data.json
+const obitelji = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići")) || [];
 
-// ✅ 3. Generiraj sidebar stavke
+// 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
   name: o.OBITELJ,
   path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
