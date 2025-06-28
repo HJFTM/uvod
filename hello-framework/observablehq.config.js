@@ -2,12 +2,12 @@ import fs from "fs";
 import path from "path";
 
 // ✅ 1. Učitaj JSON datoteku odmah
-const filePath = path.resolve("src/data/data.json");
+const filePath = path.resolve("src/data/obitelji.json");
 const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
 // ✅ 2. Uzmi obitelji iz data.json
-const obitelji = data.obitelji || [];
+const obitelji = data || [];
 
 // ✅ 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
