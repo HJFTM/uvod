@@ -11,8 +11,13 @@ const obitelji_popovici =
     data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići"))
     .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
 
-const obitelji_sivsa = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Sivša"));
-const obitelji_pecnik = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Pećnik"));
+const obitelji_sivsa = 
+    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Sivša"))
+    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
+
+const obitelji_pecnik = 
+    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Pećnik"))
+    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
 
 // 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji_sivsa.map(o => ({
@@ -81,8 +86,9 @@ export default {
         { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
       ]
     },
-     {name: "Popovići",    pages: [...obitelji_popovici,] },
-    
+     {name: "Popovići",        pages: [...obitelji_popovici,] },
+     {name: "Sivša",        pages: [...obitelji_sivsa,] },    
+     {name: "Pećnik",        pages: [...obitelji_pecnik,] },      
     {
       name: "Entiteti",
       pages: [
