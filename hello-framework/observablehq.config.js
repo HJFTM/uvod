@@ -71,8 +71,8 @@ export default {
       name: "Entiteti",
       pages: [
        
-        {name: "Obitelji (E)", path: "/pages/ENTITET/Obitelji_E"},
-        
+       //  {name: "Obitelji (E)", path: "/pages/ENTITET/Obitelji_E"},
+        {name: "Obitelji (E)", path: "/pages/ENTITET/obitelji/[OBITELJ]"},        
         {name: "Obitelji (Z)", path: "/pages/ENTITET/Obitelj_Zapisi"},
         {name: "Zapisi (E)",   path: "/pages/ENTITET/Zapisi_E"},        
         {name: "Mig. Ind. (E)", path: "/pages/ENTITET/Migracije_Individualne_E"},
