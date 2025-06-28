@@ -115,7 +115,7 @@ export default {
 
   // Dynamic paths za build (staticka generacija)
   dynamicPaths: () => {
-    return obitelji.map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
+    return obitelji_sivsa.map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
   },
 
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
