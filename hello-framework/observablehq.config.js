@@ -11,9 +11,18 @@ const obitelji_popovici =
     data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići"))
     .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
 
+const obitelji_dubocac = 
+    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Dubočac"))
+    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
+
 const obitelji_sivsa = 
     data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Sivša"))
     .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
+
+const obitelji_miljanovci = 
+    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Miljanovci"))
+    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
+
 
 const obitelji_pecnik = 
     data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Pećnik"))
@@ -87,6 +96,8 @@ export default {
       ]
     },
      {name: "Popovići",        pages: [...obitelji_popovici,] },
+     {name: "Dubočac",        pages: [...obitelji_dubocac,] },
+     {name: "Miljanovci",     pages: [...obitelji_miljanovci,] },
      {name: "Sivša",        pages: [...obitelji_sivsa,] },    
      {name: "Pećnik",        pages: [...obitelji_pecnik,] },      
     {
