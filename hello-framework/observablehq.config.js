@@ -90,39 +90,6 @@ export default {
         {name: "Groblje (E)", path: "/pages/ENTITET/Groblje_E"}
       ]
     },
-
-    {
-      name: "Popovići",
-      pages: [
-          {name: "1714. Mato", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1714. Mato"},
-          {name: "1725. Ivan", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1725. Ivan"},
-          {name: "1741. Matia", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1741. Matia"},
-          {name: "1727. Petar", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1727. Petar"},
-          {name: "1742. Stjepan", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1742. Stjepan"},
-          {name: "1748. Nikola", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1748. Nikola"},
-          {name: "1753. Ružica", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1753. Ružica"},
-          {name: "1758. Petruša", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1758. Petruša"},
-          {name: "1746. Vida", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1746. Vida"},
-          {name: "1760. Ivana", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1760. Ivana"},
-          {name: "1765. Ivan", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1765. Ivan"},
-          {name: "1770. Ivan", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1770. Ivan"},
-          {name: "1770. Kata", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1770. Kata"},
-          {name: "1772. Božo", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1772. Božo"},
-          {name: "1756. Petar ", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1756. Petar "},
-          {name: "1758. Mio", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1758. Mio"},
-          {name: "1758. Pavo", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1758. Pavo"},
-          {name: "1762. Maria", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1762. Maria"},
-          {name: "1766. Marko", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1766. Marko"},
-          {name: "1789. Marko", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1789. Marko"},
-          {name: "1780. Tomuša", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1780. Tomuša"},
-          {name: "1788. Kata", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1788. Kata"},
-          {name: "1794. Cecilia", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1794. Cecilia"},
-          {name: "1779. Maria", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1779. Maria"},
-          {name: "1780. Ružica", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1780. Ružica"},
-          {name: "1834. Ivan", path:"/pages/ENTITET/Obitelji_E?OBITELJ=1834. Ivan"},
-      ]
-    },
-     
   {
       name: "Izvori",
       pages: [
