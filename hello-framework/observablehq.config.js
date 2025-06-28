@@ -11,8 +11,8 @@ const obitelji = data || [];
 
 // ✅ 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
-  name: o.id,
-  path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.id)}`
+  name: o.OBITELJ,
+  path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
 }));
 
 export default {
