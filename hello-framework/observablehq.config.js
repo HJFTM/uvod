@@ -7,7 +7,7 @@ const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
 // ✅ 2. Uzmi obitelji iz data.json
-const obitelji = data || [];
+const obitelji = data.filter(o => o.ROD == "Bosna") || [];
 
 // ✅ 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
