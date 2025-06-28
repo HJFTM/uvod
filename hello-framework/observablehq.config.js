@@ -76,12 +76,16 @@ export default {
         { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
       ]
     },
-    {
-      name: "Entiteti",
+     {
+      name: "Obitelji",
       pages: [
         // Dinamički generirane obitelji
         ...obiteljiPages,
-        // Ostale stranice pod Entitetima
+      ]
+    },
+    {
+      name: "Entiteti",
+      pages: [
         { name: "Zapisi (E)", path: "/pages/ENTITET/Zapisi_E" },
         { name: "Mig. Ind. (E)", path: "/pages/ENTITET/Migracije_Individualne_E" },
         { name: "Masovne (E)", path: "/pages/ENTITET/Migracije_Masovne_E" },
