@@ -82,8 +82,6 @@ export default {
       ]
     },
      {name: "Popovići",    pages: [...obitelji_popovici,] },
-     {name: "Sivša",       pages: [...obiteljiPages,] },
-     {name: "Pećnik",      pages: [...obiteljiPages,] },
     
     {
       name: "Entiteti",
