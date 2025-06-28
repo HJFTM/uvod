@@ -1,19 +1,28 @@
-const obitelji = [
-  { OBITELJ: "1831. Stjepan" },
-  { OBITELJ: "1700. Marko" },
-  { OBITELJ: "1839. Nikola" },
-  { OBITELJ: "1884. Matija" }
-];
+import fs from "fs";
+import path from "path";
 
-// Generiraj sidebar stavke za obitelji
+// ✅ 1. Učitaj JSON datoteku odmah
+const filePath = path.resolve("src/data/data.json");
+const jsonString = fs.readFileSync(filePath, "utf-8");
+const data = JSON.parse(jsonString);
+
+// ✅ 2. Uzmi obitelji iz data.json
+const obitelji = data.obitelji || [];
+
+// ✅ 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
-  name: o.OBITELJ,
-  path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
+  name: o.id,
+  path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.id)}`
 }));
 
 export default {
   title: "Jularić",
 
+    async setup({ define }) {
+    // Na primjer, možeš definirati sve obitelji
+    define("obitelji", obitelji);
+  },
+  
   pages: [
     {
       name: "Uvod",
