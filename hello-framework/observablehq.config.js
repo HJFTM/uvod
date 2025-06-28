@@ -1,4 +1,3 @@
-// See https://observablehq.com/framework/config for documentation.
 export default {
   // The app’s title; used in the sidebar and webpage titles.
   title: "Jularić",
@@ -72,7 +71,7 @@ export default {
       pages: [
        
        //  {name: "Obitelji (E)", path: "/pages/ENTITET/Obitelji_E"},
-        {name: "Obitelji (E)", path: "/pages/ENTITET/obitelj/[OBITELJ]"},        
+        {name: "Obitelji (E)", path: "/pages/ENTITET/obitelj/[obitelj]"},        
         {name: "Obitelji (Z)", path: "/pages/ENTITET/Obitelj_Zapisi"},
         {name: "Zapisi (E)",   path: "/pages/ENTITET/Zapisi_E"},        
         {name: "Mig. Ind. (E)", path: "/pages/ENTITET/Migracije_Individualne_E"},
