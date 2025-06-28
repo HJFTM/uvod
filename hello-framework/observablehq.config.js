@@ -112,7 +112,7 @@ dynamicPaths: () => {
   ]; // niz objekata obitelj
 
   return data.map(d => `/pages/ENTITET/obitelj/${encodeURIComponent(d.OBITELJ)}`);
-}
+},
   
   dynamicPaths1: [
     "/pages/ENTITET/obitelj/1831. Stjepan",
