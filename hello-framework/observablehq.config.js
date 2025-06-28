@@ -77,7 +77,7 @@ export default {
       ]
     },
      {
-      name: "Obitelji",
+      name: "Obitelji Bosna",
       pages: [
         // Dinamički generirane obitelji
         ...obiteljiPages,
