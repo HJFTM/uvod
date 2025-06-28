@@ -7,40 +7,11 @@ const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
 // 2. Uzmi obitelji iz data.json
-const obitelji_popovici = 
-    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići"))
-    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
+const obiteljiPoMjestuPages = generirajObiteljiPoMjestu(data);
 
-const obitelji_dubocac = 
-    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Dubočac"))
-    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
-
-const obitelji_sivsa = 
-    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Sivša"))
-    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
-
-const obitelji_miljanovci = 
-    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Miljanovci"))
-    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
-
-
-const obitelji_pecnik = 
-    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Pećnik"))
-    .map(o => ({name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`}));
-
-// 3. Generiraj sidebar stavke
-const obiteljiPages = obitelji_sivsa.map(o => ({
-  name: o.OBITELJ,
-  path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
-}));
 
 export default {
   title: "Jularić",
-
-    async setup({ define }) {
-    // Na primjer, možeš definirati sve obitelji
-    define("obitelji", obitelji);
-  },
   
   pages: [
     {
@@ -95,11 +66,7 @@ export default {
         { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
       ]
     },
-     {name: "Popovići",        pages: [...obitelji_popovici,] },
-     {name: "Dubočac",        pages: [...obitelji_dubocac,] },
-     {name: "Miljanovci",     pages: [...obitelji_miljanovci,] },
-     {name: "Sivša",        pages: [...obitelji_sivsa,] },    
-     {name: "Pećnik",        pages: [...obitelji_pecnik,] },      
+        ...obiteljiPoMjestuPages,    
     {
       name: "Entiteti",
       pages: [
@@ -129,12 +96,38 @@ export default {
       ]
     }
   ],
+    
+dynamicPaths: () => {
+  return data
+    .filter(o => o.ROD === "Bosna" && o.OBITELJ)
+    .map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
+},
 
-  // Dynamic paths za build (staticka generacija)
-  dynamicPaths: () => {
-    return obitelji_sivsa.map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
-  },
 
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
   root: "src",
 };
+
+function generirajObiteljiPoMjestu(data, rod = "Bosna") {
+  const mapaMjesta = {};
+
+  // Grupiranje po mjestu
+  for (const o of data) {
+    if (o.ROD !== rod || !o.MJESTO || !o.OBITELJ) continue;
+
+    const mjesto = o.MJESTO.trim();
+    if (!mapaMjesta[mjesto]) mapaMjesta[mjesto] = [];
+
+    mapaMjesta[mjesto].push({
+      name: o.OBITELJ,
+      path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
+    });
+  }
+
+  // Pretvori u niz { name: mjesto, pages: [...] }
+  return Object.entries(mapaMjesta).map(([mjesto, obitelji]) => ({
+    name: mjesto,
+    pages: obitelji
+  }));
+}
+
