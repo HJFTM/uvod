@@ -7,7 +7,12 @@ const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
 // 2. Uzmi obitelji iz data.json
-const obitelji = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići")) || [];
+const obitelji_popovici = 
+    data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Popovići")).map(o => ({
+  name: o.OBITELJ, path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`})) || [];
+
+const obitelji_sivsa = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Sivša")) || [];
+const obitelji_pecnik = data.filter(o => o.ROD == "Bosna" && (o.MJESTO).includes("Pećnik")) || [];
 
 // 3. Generiraj sidebar stavke
 const obiteljiPages = obitelji.map(o => ({
@@ -76,13 +81,10 @@ export default {
         { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
       ]
     },
-     {
-      name: "Obitelji Bosna",
-      pages: [
-        // Dinamički generirane obitelji
-        ...obiteljiPages,
-      ]
-    },
+     {name: "Popovići",    pages: [...obitelji_popovici,] },
+     {name: "Sivša",       pages: [...obiteljiPages,] },
+     {name: "Pećnik",      pages: [...obiteljiPages,] },
+    
     {
       name: "Entiteti",
       pages: [
