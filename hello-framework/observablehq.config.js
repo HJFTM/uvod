@@ -138,7 +138,16 @@ export default {
       ]
     } ,  
   ],
-
+  
+  export default {
+    dynamicPaths: [
+      "/pages/ENTITET/obitelj/100736",
+      "/pages/ENTITET/obitelj/1700. Marko",
+      "/pages/ENTITET/obitelj/1720. Ivan",
+      "/pages/ENTITET/obitelj/1725, Pero",
+      …
+    ]
+  };
   // Content to add to the head of the page, e.g. for a favicon:
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
 
