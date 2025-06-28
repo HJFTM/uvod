@@ -9,6 +9,12 @@ const data = JSON.parse(jsonString);
 // 2. Uzmi obitelji iz data.json
 const obiteljiPoMjestuPages = generirajObiteljiPoMjestu(data);
 
+export async function setup() {
+  return {
+    obitelji: data
+  };
+}
+
 
 export default {
   title: "Jularić",
