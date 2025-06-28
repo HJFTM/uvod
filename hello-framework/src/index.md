@@ -66,6 +66,8 @@ new Runtime().module(define, name => {
 
 </style>
 
+---
+
 function ToggleSidebar() {
   const [open, setOpen] = useState(false);
   return html`
