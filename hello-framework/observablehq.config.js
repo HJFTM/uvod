@@ -114,12 +114,12 @@ dynamicPaths: () => {
   root: "src",
 };
 
-function generirajObiteljiPoMjestu(data, rod = "Bosna") {
+function generirajObiteljiPoMjestu(data, rod) {
+  if (rod == null) rod = "Bosna"; // pokriva i null i undefined
   const mapaMjesta = {};
 
-  // Grupiranje po mjestu
   for (const o of data) {
-    if (o.ROD !== rod || !o.MJESTO || !o.OBITELJ) continue;
+    if (!o.ROD || o.ROD !== rod || !o.MJESTO || !o.OBITELJ) continue;
 
     const mjesto = o.MJESTO.trim();
     if (!mapaMjesta[mjesto]) mapaMjesta[mjesto] = [];
@@ -130,10 +130,10 @@ function generirajObiteljiPoMjestu(data, rod = "Bosna") {
     });
   }
 
-  // Pretvori u niz { name: mjesto, pages: [...] }
   return Object.entries(mapaMjesta).map(([mjesto, obitelji]) => ({
     name: mjesto,
     pages: obitelji
   }));
 }
+
 
