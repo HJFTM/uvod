@@ -76,7 +76,7 @@ export default {
     },
         ...obiteljiPoMjestuPages, 
         ...obiteljiPoMjestuPages_du,
-        ...obiteljiPoMjestuPages_st
+        ...obiteljiPoMjestuPages_st,
     {
       name: "Entiteti",
       pages: [
