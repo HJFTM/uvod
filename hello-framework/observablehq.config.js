@@ -7,7 +7,9 @@ const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
 // 2. Uzmi obitelji iz data.json
-const obiteljiPoMjestuPages = generirajObiteljiPoMjestu(data);
+const obiteljiPoMjestuPages = generirajObiteljiPoMjestu(data, "Bosna");
+const obiteljiPoMjestuPages_du = generirajObiteljiPoMjestu(data, "Dubrovnik");
+const obiteljiPoMjestuPages_st = generirajObiteljiPoMjestu(data, "Stupnik");
 
 export async function setup() {
   return {
@@ -72,7 +74,9 @@ export default {
         { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
       ]
     },
-        ...obiteljiPoMjestuPages,    
+        ...obiteljiPoMjestuPages, 
+        ...obiteljiPoMjestuPages_du,
+        ...obiteljiPoMjestuPages_st
     {
       name: "Entiteti",
       pages: [
