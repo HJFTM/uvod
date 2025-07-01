@@ -6,21 +6,17 @@ const filePath = path.resolve("src/data/obitelji.json");
 const jsonString = fs.readFileSync(filePath, "utf-8");
 const data = JSON.parse(jsonString);
 
-// 2. Generiraj stranice po mjestima za svaki rod
-const obiteljiPoRodovima = [
-  { naziv: "Rod (Bosna)", rod: "Bosna" },
-  { naziv: "Rod (Dubrovnik)", rod: "Dubrovnik" },
-  { naziv: "Rod (Stupnik)", rod: "Stupnik" }
-].map(({ naziv, rod }) => ({
-  name: naziv,
-  pages: generirajObiteljiPoMjestu(data, rod)
-}));
+// 2. Uzmi obitelji iz data.json
+const obiteljiPoMjestuPages = generirajObiteljiPoMjestu(data, "Bosna");
+const obiteljiPoMjestuPages_du = generirajObiteljiPoMjestu(data, "Dubrovnik");
+const obiteljiPoMjestuPages_st = generirajObiteljiPoMjestu(data, "Stupnik");
 
 export async function setup() {
   return {
     obitelji: data
   };
 }
+
 
 export default {
   title: "Jularić",
@@ -46,10 +42,10 @@ export default {
         { name: "Povezane obitelji (K)", path: "/pages/KONCEPT/Obitelji_povezane_K" },
         { name: "Zapisi (K)", path: "/pages/KONCEPT/Zapisi_K" },
         { name: "Migracije (K)", path: "/pages/KONCEPT/Migracije_K" },
-        { name: "Migracije (masovne) (K)", path: "/pages/KONCEPT/Migracije_masovne_K" },
+        { name: "Migracije (K)", path: "/pages/KONCEPT/Migracije_masovne_K" },
         { name: "Mjesta (K)", path: "/pages/KONCEPT/Mjesta_K" },
         { name: "Kuće (K)", path: "/pages/KONCEPT/Kucedomacin_K" },
-        { name: "Popis stanovnika (K)", path: "/pages/KONCEPT/Popis_stanovnika_K" },
+        { name: "Popis stanocnika (K)", path: "/pages/KONCEPT/Popis_stanovnika_K" },
         { name: "Države (K)", path: "/pages/KONCEPT/Drzava_K" },
         { name: "Župe (K)", path: "/pages/KONCEPT/Zupe_K" },
         { name: "Izvori* (K)", path: "/pages/KONCEPT/Popisi_K" },
@@ -58,10 +54,29 @@ export default {
         { name: "Groblje (K)", path: "/pages/KONCEPT/Groblje_K" }
       ]
     },
-
-    // Automatski generirane sekcije po rodovima i mjestima
-    ...obiteljiPoRodovima,
-
+    {
+      name: "Rod (Bosna)",
+      pages: [
+        { name: "Prezime (R)", path: "/pages/1_Jularic/prezime_r" },
+        { name: "Generacije (R)", path: "/pages/ROD/Generacije_R" },
+        { name: "Obitelji (R)", path: "/pages/ROD/Obitelji_R" },
+        { name: "Stablo (R)", path: "/pages/ROD/Stablo_R" },
+        { name: "Zapisi (R)", path: "/pages/ROD/Zapisi_R" },
+        { name: "Migracije (R)", path: "/pages/ROD/Migracije_R" },
+        { name: "Mjesta (R)", path: "/pages/ROD/Mjesta_R" },
+        { name: "Mjesta-zapisi (R)", path: "/pages/KONCEPT/Mjesta_zapisi_R" },
+        { name: "Župe (R)", path: "/pages/ROD/Zupe_D" },
+        { name: "Župe Rodos. (R)", path: "/pages/ROD/Zupe_rodoslovlje_R" },
+        { name: "Župe Obitelji (R)", path: "/pages/ROD/Zupe_obitelji_R" },
+        { name: "Izvori* (D)", path: "/pages/ROD/Popisi_D" },
+        { name: "Pismo (D)", path: "/pages/ROD/Pismo_D" },
+        { name: "Bolesti (D)", path: "/pages/ROD/Bolesti_D" },
+        { name: "Groblje (D)", path: "/pages/ROD/Groblje_D" }
+      ]
+    },
+        ...obiteljiPoMjestuPages, 
+        ...obiteljiPoMjestuPages_du,
+        ...obiteljiPoMjestuPages_st,
     {
       name: "Entiteti",
       pages: [
@@ -92,24 +107,27 @@ export default {
     }
   ],
     
-  dynamicPaths: () => {
-    return data
-      .filter(o => o.ROD === "Bosna" && o.OBITELJ)
-      .map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
-  },
+dynamicPaths: () => {
+  return data
+    .filter(o => o.ROD === "Bosna" && o.OBITELJ)
+    .map(o => `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`);
+},
+
 
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
   root: "src",
 };
 
-// Generira stranice po mjestu za zadani rod
 function generirajObiteljiPoMjestu(data, rod) {
+  if (rod == null) rod = "Bosna"; // pokriva i null i undefined
   const mapaMjesta = {};
 
   for (const o of data) {
-    if (o.ROD !== rod || !o.MJESTO || !o.OBITELJ) continue;
+    if (!o.ROD || o.ROD !== rod || !o.MJESTO || !o.OBITELJ) continue;
+
     const mjesto = o.MJESTO.trim();
     if (!mapaMjesta[mjesto]) mapaMjesta[mjesto] = [];
+
     mapaMjesta[mjesto].push({
       name: o.OBITELJ,
       path: `/pages/ENTITET/obitelj/${encodeURIComponent(o.OBITELJ)}`
