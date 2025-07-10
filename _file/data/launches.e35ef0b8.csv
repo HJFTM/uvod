@@ -14238,7 +14238,6 @@ date,state,stateId,family
 2021-04-29,Other,F,Other
 2021-04-29,China,CN,Other
 2021-04-29,China,CN,Other
-2021-04-29,China,CN,Other
 2021-04-29,United States,US,Falcon9
 2021-04-29,United States,US,Falcon9
 2021-04-29,United States,US,Falcon9
@@ -20852,7 +20851,6 @@ date,state,stateId,family
 2024-01-15,United States,US,Falcon9
 2024-01-17,China,CN,DF5
 2024-01-17,China,CN,DF5
-2024-01-17,China,CN,DF5
 2024-01-18,United States,US,Falcon9
 2024-01-20,Other,IR,Other
 2024-01-23,China,CN,Other
@@ -23172,6 +23170,8 @@ date,state,stateId,family
 2024-11-14,United States,US,Falcon9
 2024-11-14,United States,US,Falcon9
 2024-11-14,United States,US,Falcon9
+2024-11-15,China,CN,DF5
+2024-11-15,China,CN,DF5
 2024-11-15,China,CN,DF5
 2024-11-17,United States,US,Falcon9
 2024-11-18,United States,US,Falcon9
@@ -25792,3 +25792,31 @@ date,state,stateId,family
 2025-07-02,United States,US,Falcon9
 2025-07-03,China,CN,DF5
 2025-07-03,Russia,RU,R-7
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
+2025-07-08,United States,US,Falcon9
