@@ -11,9 +11,9 @@ jobs:
 
     env:
       TARGET_REPOS: |
-        git@github.com:korisnik/moj-projekt-cjelina1.git
-        git@github.com:korisnik/moj-projekt-cjelina2.git
-        git@github.com:korisnik/moj-projekt-cjelina3.git
+        git@github.com:hjftm/bosna.git
+        git@github.com:hjftm/dubrovnik.git
+        git@github.com:hjftm/stupnik.git
 
     steps:
       - name: Checkout main repo
