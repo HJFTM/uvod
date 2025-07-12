@@ -1,4 +1,4 @@
-name: Sync to Subprojects
+name: Sync to Subprojects v2
 
 on:
   push:
@@ -11,34 +11,34 @@ jobs:
 
     env:
       TARGET_REPOS: |
-        git@github.com:hjftm/bosna.git
-        git@github.com:hjftm/dubrovnik.git
-        git@github.com:hjftm/stupnik.git
+        bosna
+        dubrovnik
+        stupnik
 
     steps:
       - name: Checkout main repo
         uses: actions/checkout@v3
 
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set Git config
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
 
       - name: Install rsync
-        run: sudo apt-get install rsync
+        run: sudo apt-get install -y rsync
 
       - name: Sync to subprojects
         run: |
           for REPO in $TARGET_REPOS; do
-            REPO_NAME=$(basename $REPO .git)
-            echo "Syncing to $REPO_NAME"
+            echo "Syncing to $REPO"
 
-            git clone --depth=1 https://x-access-token:${{ secrets.PAT_TOKEN_SYNC }}@github.com/HJFTM/$REPO.git temp-$REPO
+            # Kloniraj target repozitorij
+            git clone --depth=1 https://x-access-token:${{ secrets.PAT_TOKEN_SYNC }}@github.com/hjftm/$REPO.git temp-$REPO
 
+            # Sinkroniziraj sadržaj
+            rsync -av --delete --exclude='.git' ./ temp-$REPO/
 
-            cd "$REPO_NAME"
-            git config user.name "GitHub Action"
-            git config user.email "action@github.com"
+            cd temp-$REPO
 
             git add .
             git commit -m "Sync from main repo on $(date)" || echo "No changes to commit"
