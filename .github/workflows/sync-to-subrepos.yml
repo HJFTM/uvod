@@ -36,7 +36,16 @@ jobs:
             git clone --depth=1 https://x-access-token:${{ secrets.PAT_TOKEN_SYNC }}@github.com/HJFTM/$REPO.git temp-$REPO
 
             # Sinkroniziraj sadržaj iz glavnog repozitorija u target
-            rsync -av --delete --exclude='.git' --exclude='node_modules' $GITHUB_WORKSPACE/ temp-$REPO/
+            # Sync uz include samo main.yml iz workflows
+            rsync -av --delete \
+              --exclude='.git' \
+              --exclude='node_modules' \
+              --filter='dir-merge,- .github/workflows/**' \
+              --include='.github/' \
+              --include='.github/workflows/' \
+              --include='.github/workflows/main.yml' \
+              --exclude='*' \
+              "$GITHUB_WORKSPACE/" "temp-$REPO/"
 
             # Uđi u target direktorij
             cd temp-$REPO
