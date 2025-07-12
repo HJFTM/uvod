@@ -33,8 +33,8 @@ jobs:
             REPO_NAME=$(basename $REPO .git)
             echo "Syncing to $REPO_NAME"
 
-            git clone --depth=1 "$REPO" "$REPO_NAME"
-            rsync -av --delete --exclude=".git" ./ "$REPO_NAME"/
+            git clone --depth=1 https://x-access-token:${{ secrets.PAT_TOKEN_SYNC }}@github.com/HJFTM/$REPO.git temp-$REPO
+
 
             cd "$REPO_NAME"
             git config user.name "GitHub Action"
