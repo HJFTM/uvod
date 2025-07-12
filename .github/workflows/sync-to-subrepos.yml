@@ -36,7 +36,7 @@ jobs:
             git clone --depth=1 https://x-access-token:${{ secrets.PAT_TOKEN_SYNC }}@github.com/hjftm/$REPO.git temp-$REPO
 
             # Sinkroniziraj sadržaj
-            rsync -a --delete --exclude='.git' --exclude='node_modules' ./ temp-$REPO/ > /dev/null
+            rsync -av --delete --exclude='.git' --exclude='node_modules' ./ temp-$REPO/ > /dev/null
             rm -rf temp-$REPO
             cd temp-$REPO
 
