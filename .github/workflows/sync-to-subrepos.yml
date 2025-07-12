@@ -1,0 +1,47 @@
+name: Sync to Subprojects
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    env:
+      TARGET_REPOS: |
+        git@github.com:korisnik/moj-projekt-cjelina1.git
+        git@github.com:korisnik/moj-projekt-cjelina2.git
+        git@github.com:korisnik/moj-projekt-cjelina3.git
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install rsync
+        run: sudo apt-get install rsync
+
+      - name: Sync to subprojects
+        run: |
+          for REPO in $TARGET_REPOS; do
+            REPO_NAME=$(basename $REPO .git)
+            echo "Syncing to $REPO_NAME"
+
+            git clone --depth=1 "$REPO" "$REPO_NAME"
+            rsync -av --delete --exclude=".git" ./ "$REPO_NAME"/
+
+            cd "$REPO_NAME"
+            git config user.name "GitHub Action"
+            git config user.email "action@github.com"
+
+            git add .
+            git commit -m "Sync from main repo on $(date)" || echo "No changes to commit"
+            git push origin main
+            cd ..
+          done
