@@ -37,7 +37,7 @@ jobs:
 
             # Sinkroniziraj sadržaj
             rsync -a --delete --exclude='.git' --exclude='node_modules' ./ temp-$REPO/ > /dev/null
-
+            rm -rf temp-$REPO
             cd temp-$REPO
 
             git add .
