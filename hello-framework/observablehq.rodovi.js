@@ -25,14 +25,11 @@ export const rodEntitetiIzvoriPages = [
   },
   {
     name: "Izvori",
-    pages: [
-     
+    pages: [    
       { name: "Izvori",           path: /pages/ROD/Izvori_D?ROD=${encodeURIComponent(CURRENT_PROJECT)} },      
       { name: "Popisi*",          path: /pages/ROD/Popisi_D?ROD=${encodeURIComponent(CURRENT_PROJECT)} },
       { name: "Katastar",         path: /pages/ROD/Katastar_D?ROD=${encodeURIComponent(CURRENT_PROJECT)} }, 
-      { name: "Groblje",          path: /pages/ROD/Groblje_D?ROD=${encodeURIComponent(CURRENT_PROJECT)} },
-
-      
+      { name: "Groblje",          path: /pages/ROD/Groblje_D?ROD=${encodeURIComponent(CURRENT_PROJECT)} },      
     ]
-  },
+  }
 ];
