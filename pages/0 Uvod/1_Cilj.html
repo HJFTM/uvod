@@ -31,18 +31,18 @@ import "../../_observablehq/client.8d1cd726.js";
   <section>
     <summary>Uvod</summary>
     <ol>
-    <li class="observablehq-link"><a href="../0%20Uvod/naslovnica">Naslovnica</a></li>
-    <li class="observablehq-link"><a href="../0%20Uvod/uvod">Uvod</a></li>
-    <li class="observablehq-link"><a href="../0%20Uvod/dogadjaji">Događaji</a></li>
+    <li class="observablehq-link"><a href="./naslovnica">Naslovnica</a></li>
+    <li class="observablehq-link"><a href="./uvod">Uvod</a></li>
+    <li class="observablehq-link"><a href="./dogadjaji">Događaji</a></li>
     </ol>
   </section>
   <section>
     <summary>Istaživanjr</summary>
     <ol>
-    <li class="observablehq-link"><a href="../0%20Uvod/naslovnica">Cilj i metodologija</a></li>
-    <li class="observablehq-link"><a href="../0%20Uvod/uvod">Obitelj i Rod</a></li>
-    <li class="observablehq-link"><a href="../0%20Uvod/dogadjaji">Izvori i Evidencija</a></li>
-    <li class="observablehq-link"><a href="../0%20Uvod/dogadjaji">Ogranicenja i pristup</a></li>
+    <li class="observablehq-link"><a href="./naslovnica">Cilj i metodologija</a></li>
+    <li class="observablehq-link"><a href="./uvod">Obitelj i Rod</a></li>
+    <li class="observablehq-link"><a href="./dogadjaji">Izvori i Evidencija</a></li>
+    <li class="observablehq-link"><a href="./dogadjaji">Ogranicenja i pristup</a></li>
     </ol>
   </section>
   <section>
@@ -105,12 +105,14 @@ import "../../_observablehq/client.8d1cd726.js";
 </nav>
 </aside>
 <main id="observablehq-main" class="observablehq">
-<div id="observablehq-14004b14"></div>
+<div id="observablehq-cilj_header-296ba255"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/58d138b25a877fc0.js?v=4&api_key=9bf79bb2382422ef0c7025947185febe53f9a81e";
-new Runtime().module(define, Inspector.into("#observablehq-14004b14"));
+import define from "https://api.observablehq.com/d/c6072b72391e1a68.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "cilj_header") return new Inspector(document.querySelector("#observablehq-cilj_header-296ba255"));
+});
 </script>
 </main>
 <footer id="observablehq-footer">
