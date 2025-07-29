@@ -1,5 +1,9 @@
 {
+  "name": "jularic-prezime",
+  "version": "1.0.0",
+
   "dependencies": {
-    "@observablehq/framework": "^1.13.3"
+    "@observablehq/framework": "^1.13.3",
+    "puppeteer": "^21.3.8"
   }
 }
