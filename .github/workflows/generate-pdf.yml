@@ -48,7 +48,6 @@ jobs:
       env:
         OUTPUT_DIR: ../gh-pages
 
-    # 4️⃣ Commit i push PDF u gh-pages branch
     - name: Commit PDF to gh-pages
       run: |
         cd gh-pages
@@ -56,4 +55,6 @@ jobs:
         git config user.email "actions@github.com"
         git add uvod.pdf
         git commit -m "📄 Dodan PDF iz generate-pdf.yml" || echo "No changes"
+        git pull --rebase origin gh-pages
         git push
+
