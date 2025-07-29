@@ -1,13 +1,13 @@
 name: Generate PDF
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   push:
     branches: [main]
 
 permissions:
-  contents: write 
-  
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,14 +31,22 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install dependencies
+    - name: Install Puppeteer
       run: npm install puppeteer
 
     - name: Generate PDF
       run: node hello-framework/scripts/generate-uvod-pdf.js
 
-    - name: Deploy to GitHub Pages
+    # 🟡 KLJUČNI DIO: Kloniramo postojeći gh-pages branch
+    - name: Clone existing gh-pages content
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
+        git clone --branch gh-pages https://github.com/${{ github.repository }} gh-pages-copy
+        cp public/uvod.pdf gh-pages-copy/uvod.pdf
+
+    - name: Push updated PDF to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./gh-pages-copy
