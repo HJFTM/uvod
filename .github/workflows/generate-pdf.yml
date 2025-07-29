@@ -35,7 +35,7 @@ jobs:
       run: npm install puppeteer
 
     - name: Generate PDF
-      run: node scripts/generate-uvod-pdf.js
+      run: node hello-framework/scripts/generate-uvod-pdf.js
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
