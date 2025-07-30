@@ -1,6 +1,7 @@
 name: Sync to Subprojects (bosna, dubrovnik, stupnik, obitelji)
 
 on:
+  workflow_dispatch:      # Omogućava ručno pokretanje
   push:
     branches:
       - main
