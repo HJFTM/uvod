@@ -1,4 +1,4 @@
-name: Sync to Subprojects v2
+name: Sync to Subprojects (bosna, dubrovnik, stupnik, obitelji)
 
 on:
   push:
