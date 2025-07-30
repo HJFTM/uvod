@@ -40,6 +40,9 @@ jobs:
             # Sinkroniziraj sadržaj iz glavnog repozitorija u target
             # Sync uz include samo generate-html.yml iz workflows
             echo "Starting rsync"
+            echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+            echo "temp-REPO/: temp-$REPO"
+                        
             rsync -av --delete \
               --exclude='.git' \
               --exclude='node_modules' \
