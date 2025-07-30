@@ -1,4 +1,4 @@
-name: Sync to Subprojects (bosna, dubrovnik, stupnik, obitelji)
+name: Sync to Subprojects
 
 on:
   workflow_dispatch:      # Omogućava ručno pokretanje
@@ -39,6 +39,7 @@ jobs:
 
             # Sinkroniziraj sadržaj iz glavnog repozitorija u target
             # Sync uz include samo generate-html.yml iz workflows
+            echo "Starting rsync"
             rsync -av --delete \
               --exclude='.git' \
               --exclude='node_modules' \
