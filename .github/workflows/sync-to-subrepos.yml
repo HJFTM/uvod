@@ -47,6 +47,7 @@ jobs:
              --include='.github/' \
              --include='.github/workflows/' \
              --include='.github/workflows/main.yml' \
+              --include='.github/workflows/generate-pdf.yml' \
              --include='hello-framework/***' \
              --exclude='*' \
              "$GITHUB_WORKSPACE/" "temp-$REPO/"
