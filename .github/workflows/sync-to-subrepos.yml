@@ -16,6 +16,7 @@ jobs:
         dubrovnik
         stupnik
         obitelji 
+        izvori
 
     steps:
       - name: Checkout main repo
