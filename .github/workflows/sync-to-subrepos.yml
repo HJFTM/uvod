@@ -16,6 +16,7 @@ jobs:
         dubrovnik
         stupnik
         obitelji 
+        zapisi
         izvori
 
     steps:
