@@ -47,7 +47,7 @@ jobs:
           WAIT_MS: "800"
           NAV_TIMEOUT: "45000"
         run: |
-          node scripts/snapshot-uvod.js
+          node main/hello-framework/scripts/snapshot-uvod.js
 
       - name: Pack ZIP
         run: |
