@@ -19,8 +19,8 @@ export const uvodPages = [
     name: "Rodovi",
     pages: [
       { name: "Rodovi Ilarić",    path: "/pages/KONCEPT/Rodovi_K" },          
-      { name: "Župe", path: "/pages/KONCEPT/Zupe_K" },
-      { name: "Mjesta", path: "/pages/KONCEPT/Mjesta_K" },
+      { name: "Župe",             path: "/pages/KONCEPT/Zupe_K" },
+      { name: "Mjesta",           path: "/pages/KONCEPT/Mjesta_K" },
     ]
   },
   {
