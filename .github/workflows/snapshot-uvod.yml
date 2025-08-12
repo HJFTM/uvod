@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       start_url:
-        description: "Start URL (must be under hjftm.github.io/uvod/)"
+        description: "Start URL (mora biti pod /uvod/)"
         required: false
         default: "https://hjftm.github.io/uvod/"
       max_pages:
@@ -15,30 +15,30 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Debug repo layout
+        run: |
+          pwd
+          ls -la
+          ls -R hello-framework | sed -n '1,200p'
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Install deps
+      - name: Install deps in hello-framework/
+        working-directory: hello-framework
         run: |
           npm init -y
           npm pkg set type="module"
           npm i puppeteer@23
 
-      - name: Add snapshot script
-        run: |
-          mkdir -p scripts
-          # Ako je skripta već u repozitoriju, ovaj korak preskoči ili zamijeni 'cat <<' slijedećim
-          # OVDJE NE STAVLJAJ SKRIPTU – već si je dodao ručno – ovaj korak služi samo kao primjer.
-          echo "OK"
-
       - name: Run snapshot
+        working-directory: hello-framework
         env:
           START_URL: ${{ github.event.inputs.start_url || 'https://hjftm.github.io/uvod/' }}
           OUT_DIR: snapshot-uvod
@@ -46,10 +46,10 @@ jobs:
           CONCURRENCY: "4"
           WAIT_MS: "800"
           NAV_TIMEOUT: "45000"
-        run: |
-          node main/hello-framework/scripts/snapshot-uvod.js
+        run: node scripts/snapshot-uvod.js
 
       - name: Pack ZIP
+        working-directory: hello-framework
         run: |
           ts=$(date +'%Y%m%d-%H%M')
           zip -r "uvod-snapshot-$ts.zip" snapshot-uvod
@@ -59,12 +59,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.ZIP_NAME }}
-          path: ${{ env.ZIP_NAME }}
+          path: hello-framework/${{ env.ZIP_NAME }}
 
       - name: Commit ZIP into web/
         run: |
           mkdir -p web
-          mv "${ZIP_NAME}" web/
+          mv "hello-framework/${ZIP_NAME}" web/
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add web/"${ZIP_NAME}"
