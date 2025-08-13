@@ -19,6 +19,7 @@ jobs:
         obitelji 
         zapisi
         izvori
+        prezime
 
     steps:
       - name: Checkout main repo
