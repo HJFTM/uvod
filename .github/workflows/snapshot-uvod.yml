@@ -1,78 +1,55 @@
-name: Snapshot UVOD (Puppeteer)
-
-permissions:
-  contents: write   # omogućava git push u repozitorij
+name: Snapshot 4 projects to prezime
 
 on:
   workflow_dispatch:
-    inputs:
-      start_url:
-        description: "Start URL (mora biti pod /uvod/)"
-        required: false
-        default: "https://hjftm.github.io/uvod/"
-      max_pages:
-        description: "Safety limit"
-        required: false
-        default: "800"
+  schedule:
+    - cron: "15 3 * * *"
 
 jobs:
-  crawl:
+  snapshot:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout
+      - name: Checkout this repo (tools + script)
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Debug repo layout
-        run: |
-          pwd
-          ls -la
-          ls -R hello-framework | sed -n '1,200p'
+          fetch-depth: 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
 
-      - name: Install deps in hello-framework/
-        working-directory: hello-framework
+      - name: Install deps
         run: |
-          npm init -y
-          npm pkg set type="module"
-          npm i puppeteer@23
+          npm install puppeteer fs-extra
 
-      - name: Run snapshot
-        working-directory: hello-framework
-        env:
-          START_URL: ${{ github.event.inputs.start_url || 'https://hjftm.github.io/uvod/' }}
-          OUT_DIR: snapshot-uvod
-          MAX_PAGES: ${{ github.event.inputs.max_pages || '800' }}
-          CONCURRENCY: "4"
-          WAIT_MS: "800"
-          NAV_TIMEOUT: "45000"
-        run: node scripts/snapshot-uvod.js
+      - name: Run crawler
+        run: node snapshot-uvod.js
 
-      - name: Pack ZIP
-        working-directory: hello-framework
-        run: |
-          ts=$(date +'%Y%m%d-%H%M')
-          zip -r "uvod-snapshot-$ts.zip" snapshot-uvod
-          echo "ZIP_NAME=uvod-snapshot-$ts.zip" >> $GITHUB_ENV
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Checkout HJFTM/prezime (gh-pages)
+        uses: actions/checkout@v4
         with:
-          name: ${{ env.ZIP_NAME }}
-          path: hello-framework/${{ env.ZIP_NAME }}
+          repository: HJFTM/prezime
+          token: ${{ secrets.PREZIME_PAT }}
+          ref: gh-pages
+          path: prezime
 
-      - name: Commit ZIP into web/
+      - name: Sync output -> prezime/
         run: |
-          mkdir -p web
-          mv "hello-framework/${ZIP_NAME}" web/
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add web/"${ZIP_NAME}"
-          git commit -m "Add UVOD snapshot ${ZIP_NAME}" || echo "No changes"
-          git push
+          rsync -av --delete prezime-site/ prezime/
+
+      - name: Commit & push
+        working-directory: prezime
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Snapshot update $(date -u +%F_%T)"
+            git push origin gh-pages
+          fi
