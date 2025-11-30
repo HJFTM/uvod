@@ -52,7 +52,7 @@ jobs:
              --filter='dir-merge,- .github/workflows/**' \
              --include='.github/' \
              --include='.github/workflows/' \
-             --include='.github/workflows/main.yml' \
+             --include='.github/workflows/generate-html.yml' \
              --include='.github/workflows/generate-pdf.yml' \
              --include='hello-framework/***' \
              --exclude='*' \
