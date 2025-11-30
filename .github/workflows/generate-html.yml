@@ -1,4 +1,4 @@
-name: Generate HTML Observable Site
+name: Generate HTML
 
 on:
   push:
