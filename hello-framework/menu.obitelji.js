@@ -9,8 +9,8 @@ export const obiteljiPages = [
   ...obitelji, 
 ];
 
-export const mjestoObiteljiPages = [
-  ...mjestoObitelji, 
+export const mjestaObiteljiPages = [
+  ...mjestaObitelji, 
 ];
 
 export const obiteljiPagesAll = [
@@ -20,10 +20,10 @@ export const obiteljiPagesAll = [
   ...obiteljiZapis, 
 ];
 
-export function mjestoObitelji(data, rod = "Bosna") {
+export function mjestaObitelji(data, rod = "Bosna") {
   const mjestaSet = new Set();
 
-  // 1) skup mjesta – dodano: o.TIP === "M"
+  // 1) skup mjesta – samo TIP === "M"
   for (const o of data) {
     if (!o.ROD || o.ROD !== rod || !o.MJESTO || !o.OBITELJ || o.TIP !== "M") continue;
     mjestaSet.add(o.MJESTO.trim());
@@ -33,7 +33,7 @@ export function mjestoObitelji(data, rod = "Bosna") {
   const mapaMjesta = {};
 
   for (const mjesto of mjesta) {
-    // 2) filtriraj obitelji za to mjesto (uključujući migracije) – dodano: o.TIP === "M"
+    // 2) filtriraj obitelji za to mjesto (uključujući migracije)
     const obiteljiZaMjesto = data.filter(o =>
       o.ROD === rod &&
       o.TIP === "M" &&
@@ -62,8 +62,8 @@ export function mjestoObitelji(data, rod = "Bosna") {
       }
     }
 
-    // 4) pretvori u strukturu menija s podstranicama
-    mapaMjesta[mjesto] = Array.from(mapaObitelji.entries()).map(
+    // 4) pretvori u strukturu menija: obitelji kao podstranice
+    const obitelji = Array.from(mapaObitelji.entries()).map(
       ([obitelj, paths]) => ({
         name: obitelj,
         path: paths.osnovni,
@@ -75,23 +75,16 @@ export function mjestoObitelji(data, rod = "Bosna") {
         ]
       })
     );
+
+    mapaMjesta[mjesto] = obitelji;
   }
 
-  // 5) top-level: mjesta + dodatna stranica o mjestu
-  return Object.entries(mapaMjesta).map(([mjesto, obitelji]) => {
-    const mjestoPath = `/pages/ENTITET/mjesto/${encodeURIComponent(mjesto)}`;
-
-    return {
-      name: "Obitelji: " + mjesto,
-      pages: [
-        {
-          name: `O mjestu ${mjesto}`,
-          path: mjestoPath
-        },
-        ...obitelji
-      ]
-    };
-  });
+  // 5) top-level: svako mjesto je stranica, obitelji su podstranice tog mjesta
+  return Object.entries(mapaMjesta).map(([mjesto, obitelji]) => ({
+    name: mjesto,
+    path: `/pages/ENTITET/mjesto/${encodeURIComponent(mjesto)}`,
+    pages: obitelji
+  }));
 }
 
 
