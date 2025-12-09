@@ -1,5 +1,6 @@
 import {CURRENT_PROJECT, data} from "./observablehq.base.js";
 
+export const mjestaObitelji = generirajMjestaObitelji(data.obitelj, "Bosna");
 export const obitelji = generirajObiteljiPoMjestu(data.obitelj, "Bosna");
 const obiteljiGEO = generirajObiteljiGEOpoMjestu(data.obitelj, "Bosna");
 const obiteljiZapis = generirajObiteljiZapis(data.obitelj, "Bosna");
@@ -20,7 +21,7 @@ export const obiteljiPagesAll = [
   ...obiteljiZapis, 
 ];
 
-export function mjestaObitelji(data, rod = "Bosna") {
+export function generirajMjestaObitelji(data, rod = "Bosna") {
   const mjestaSet = new Set();
 
   // 1) skup mjesta – samo TIP === "M"
